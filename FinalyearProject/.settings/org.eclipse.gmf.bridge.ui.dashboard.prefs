@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/FinalyearProject/model/My.genmodel
+gmf_dashboard/domainModel=platform\:/resource/FinalyearProject/model/My.ecore
+gmf_dashboard/generationModel=platform\:/resource/FinalyearProject/model/My.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/FinalyearProject/model/My.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/FinalyearProject/model/My.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/FinalyearProject/model/My.gmftool

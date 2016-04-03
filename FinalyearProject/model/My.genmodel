@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/FinalyearProject/src" modelPluginID="FinalyearProject"
+    modelName="My" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>My.ecore</foreignModel>
+  <genPackages prefix="FinalYearName" disposableProviderFactory="true" ecorePackage="My.ecore#/">
+    <genClasses ecoreClass="My.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasActor"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasGoal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasDependencyLink"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasSecurityObjective"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasThreat"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasSecurityConstraint"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasPlan"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasSecurityMechanism"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//Actor"/>
+    <genClasses ecoreClass="My.ecore#//Goal"/>
+    <genClasses ecoreClass="My.ecore#//DependencyLink">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//DependencyLink/toGoal"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference My.ecore#//DependencyLink/fromActor"/>
+    </genClasses>
+    <genClasses ecoreClass="My.ecore#//SecurityObjective"/>
+    <genClasses ecoreClass="My.ecore#//Threat"/>
+    <genClasses ecoreClass="My.ecore#//SecurityConstraint"/>
+    <genClasses ecoreClass="My.ecore#//Plan"/>
+    <genClasses ecoreClass="My.ecore#//SecurityMechanism"/>
+  </genPackages>
+</genmodel:GenModel>
