@@ -1,0 +1,7 @@
+# Tracing options for the FinalyearProject.diagram plug-in
+
+# Common issues
+FinalyearProject.diagram/debug=false
+
+# Visual IDs
+FinalyearProject.diagram/debug/visualID=false
