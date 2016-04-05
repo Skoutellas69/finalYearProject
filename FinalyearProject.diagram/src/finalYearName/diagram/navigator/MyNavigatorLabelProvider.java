@@ -97,6 +97,24 @@ public class MyNavigatorLabelProvider extends LabelProvider implements
 		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?TopLevelNode?finalYearURI?SecurityObjective", finalYearName.diagram.providers.MyElementTypes.SecurityObjective_2007); //$NON-NLS-1$
+		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?finalYearURI?AttackMethod", finalYearName.diagram.providers.MyElementTypes.AttackMethod_2008); //$NON-NLS-1$
+		case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?finalYearURI?Organisation", finalYearName.diagram.providers.MyElementTypes.Organisation_2009); //$NON-NLS-1$
+		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?finalYearURI?Attacker", finalYearName.diagram.providers.MyElementTypes.Attacker_2010); //$NON-NLS-1$
+		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?finalYearURI?Resource", finalYearName.diagram.providers.MyElementTypes.Resource_2011); //$NON-NLS-1$
+		case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?finalYearURI?Vulnerability", finalYearName.diagram.providers.MyElementTypes.Vulnerability_2012); //$NON-NLS-1$
+		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
+			return getImage(
+					"Navigator?TopLevelNode?finalYearURI?SoftGoal", finalYearName.diagram.providers.MyElementTypes.SoftGoal_2013); //$NON-NLS-1$
 		case finalYearName.diagram.edit.parts.DependencyLinkEditPart.VISUAL_ID:
 			return getImage(
 					"Navigator?Link?finalYearURI?DependencyLink", finalYearName.diagram.providers.MyElementTypes.DependencyLink_4001); //$NON-NLS-1$
@@ -171,6 +189,18 @@ public class MyNavigatorLabelProvider extends LabelProvider implements
 			return getSecurityConstraint_2006Text(view);
 		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
 			return getSecurityObjective_2007Text(view);
+		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
+			return getAttackMethod_2008Text(view);
+		case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID:
+			return getOrganisation_2009Text(view);
+		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
+			return getAttacker_2010Text(view);
+		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
+			return getResource_2011Text(view);
+		case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID:
+			return getVulnerability_2012Text(view);
+		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
+			return getSoftGoal_2013Text(view);
 		case finalYearName.diagram.edit.parts.DependencyLinkEditPart.VISUAL_ID:
 			return getDependencyLink_4001Text(view);
 		}
@@ -230,6 +260,48 @@ public class MyNavigatorLabelProvider extends LabelProvider implements
 	 * @generated
 	 */
 	private String getSecurityObjective_2007Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getAttackMethod_2008Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getOrganisation_2009Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getAttacker_2010Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getResource_2011Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getVulnerability_2012Text(View view) {
+		return ""; //$NON-NLS-1$
+	}
+
+	/**
+	 * @generated
+	 */
+	private String getSoftGoal_2013Text(View view) {
 		return ""; //$NON-NLS-1$
 	}
 

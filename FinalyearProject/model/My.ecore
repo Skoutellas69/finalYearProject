@@ -18,6 +18,18 @@
         eType="#//Plan" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasSecurityMechanism" upperBound="-1"
         eType="#//SecurityMechanism" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasOrganisation" upperBound="-1"
+        eType="#//Organisation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasSoftGoal" upperBound="-1"
+        eType="#//SoftGoal" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasResource" upperBound="-1"
+        eType="#//Resource" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasAttacker" upperBound="-1"
+        eType="#//Attacker" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="newEReference" upperBound="-1"
+        eType="#//Vulnerability" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasAttackMethod" upperBound="-1"
+        eType="#//AttackMethod" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Actor"/>
   <eClassifiers xsi:type="ecore:EClass" name="Goal"/>
@@ -32,4 +44,10 @@
   <eClassifiers xsi:type="ecore:EClass" name="SecurityConstraint"/>
   <eClassifiers xsi:type="ecore:EClass" name="Plan"/>
   <eClassifiers xsi:type="ecore:EClass" name="SecurityMechanism"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Organisation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SoftGoal"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Resource"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Attacker"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Vulnerability"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AttackMethod"/>
 </ecore:EPackage>

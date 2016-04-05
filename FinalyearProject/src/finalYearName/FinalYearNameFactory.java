@@ -103,6 +103,60 @@ public interface FinalYearNameFactory extends EFactory {
 	SecurityMechanism createSecurityMechanism();
 
 	/**
+	 * Returns a new object of class '<em>Organisation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Organisation</em>'.
+	 * @generated
+	 */
+	Organisation createOrganisation();
+
+	/**
+	 * Returns a new object of class '<em>Soft Goal</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Soft Goal</em>'.
+	 * @generated
+	 */
+	SoftGoal createSoftGoal();
+
+	/**
+	 * Returns a new object of class '<em>Resource</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Resource</em>'.
+	 * @generated
+	 */
+	Resource createResource();
+
+	/**
+	 * Returns a new object of class '<em>Attacker</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attacker</em>'.
+	 * @generated
+	 */
+	Attacker createAttacker();
+
+	/**
+	 * Returns a new object of class '<em>Vulnerability</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Vulnerability</em>'.
+	 * @generated
+	 */
+	Vulnerability createVulnerability();
+
+	/**
+	 * Returns a new object of class '<em>Attack Method</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Attack Method</em>'.
+	 * @generated
+	 */
+	AttackMethod createAttackMethod();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

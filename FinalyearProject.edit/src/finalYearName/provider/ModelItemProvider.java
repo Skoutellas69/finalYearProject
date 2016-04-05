@@ -85,6 +85,12 @@ public class ModelItemProvider
 			childrenFeatures.add(FinalYearNamePackage.Literals.MODEL__HAS_SECURITY_CONSTRAINT);
 			childrenFeatures.add(FinalYearNamePackage.Literals.MODEL__HAS_PLAN);
 			childrenFeatures.add(FinalYearNamePackage.Literals.MODEL__HAS_SECURITY_MECHANISM);
+			childrenFeatures.add(FinalYearNamePackage.Literals.MODEL__HAS_ORGANISATION);
+			childrenFeatures.add(FinalYearNamePackage.Literals.MODEL__HAS_SOFT_GOAL);
+			childrenFeatures.add(FinalYearNamePackage.Literals.MODEL__HAS_RESOURCE);
+			childrenFeatures.add(FinalYearNamePackage.Literals.MODEL__HAS_ATTACKER);
+			childrenFeatures.add(FinalYearNamePackage.Literals.MODEL__NEW_EREFERENCE);
+			childrenFeatures.add(FinalYearNamePackage.Literals.MODEL__HAS_ATTACK_METHOD);
 		}
 		return childrenFeatures;
 	}
@@ -145,6 +151,12 @@ public class ModelItemProvider
 			case FinalYearNamePackage.MODEL__HAS_SECURITY_CONSTRAINT:
 			case FinalYearNamePackage.MODEL__HAS_PLAN:
 			case FinalYearNamePackage.MODEL__HAS_SECURITY_MECHANISM:
+			case FinalYearNamePackage.MODEL__HAS_ORGANISATION:
+			case FinalYearNamePackage.MODEL__HAS_SOFT_GOAL:
+			case FinalYearNamePackage.MODEL__HAS_RESOURCE:
+			case FinalYearNamePackage.MODEL__HAS_ATTACKER:
+			case FinalYearNamePackage.MODEL__NEW_EREFERENCE:
+			case FinalYearNamePackage.MODEL__HAS_ATTACK_METHOD:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -201,6 +213,36 @@ public class ModelItemProvider
 			(createChildParameter
 				(FinalYearNamePackage.Literals.MODEL__HAS_SECURITY_MECHANISM,
 				 FinalYearNameFactory.eINSTANCE.createSecurityMechanism()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FinalYearNamePackage.Literals.MODEL__HAS_ORGANISATION,
+				 FinalYearNameFactory.eINSTANCE.createOrganisation()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FinalYearNamePackage.Literals.MODEL__HAS_SOFT_GOAL,
+				 FinalYearNameFactory.eINSTANCE.createSoftGoal()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FinalYearNamePackage.Literals.MODEL__HAS_RESOURCE,
+				 FinalYearNameFactory.eINSTANCE.createResource()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FinalYearNamePackage.Literals.MODEL__HAS_ATTACKER,
+				 FinalYearNameFactory.eINSTANCE.createAttacker()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FinalYearNamePackage.Literals.MODEL__NEW_EREFERENCE,
+				 FinalYearNameFactory.eINSTANCE.createVulnerability()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(FinalYearNamePackage.Literals.MODEL__HAS_ATTACK_METHOD,
+				 FinalYearNameFactory.eINSTANCE.createAttackMethod()));
 	}
 
 	/**

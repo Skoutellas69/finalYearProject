@@ -65,6 +65,12 @@ public class FinalYearNameFactoryImpl extends EFactoryImpl implements FinalYearN
 			case FinalYearNamePackage.SECURITY_CONSTRAINT: return createSecurityConstraint();
 			case FinalYearNamePackage.PLAN: return createPlan();
 			case FinalYearNamePackage.SECURITY_MECHANISM: return createSecurityMechanism();
+			case FinalYearNamePackage.ORGANISATION: return createOrganisation();
+			case FinalYearNamePackage.SOFT_GOAL: return createSoftGoal();
+			case FinalYearNamePackage.RESOURCE: return createResource();
+			case FinalYearNamePackage.ATTACKER: return createAttacker();
+			case FinalYearNamePackage.VULNERABILITY: return createVulnerability();
+			case FinalYearNamePackage.ATTACK_METHOD: return createAttackMethod();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -158,6 +164,66 @@ public class FinalYearNameFactoryImpl extends EFactoryImpl implements FinalYearN
 	public SecurityMechanism createSecurityMechanism() {
 		SecurityMechanismImpl securityMechanism = new SecurityMechanismImpl();
 		return securityMechanism;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Organisation createOrganisation() {
+		OrganisationImpl organisation = new OrganisationImpl();
+		return organisation;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SoftGoal createSoftGoal() {
+		SoftGoalImpl softGoal = new SoftGoalImpl();
+		return softGoal;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Resource createResource() {
+		ResourceImpl resource = new ResourceImpl();
+		return resource;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Attacker createAttacker() {
+		AttackerImpl attacker = new AttackerImpl();
+		return attacker;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Vulnerability createVulnerability() {
+		VulnerabilityImpl vulnerability = new VulnerabilityImpl();
+		return vulnerability;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AttackMethod createAttackMethod() {
+		AttackMethodImpl attackMethod = new AttackMethodImpl();
+		return attackMethod;
 	}
 
 	/**

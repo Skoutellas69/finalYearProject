@@ -120,6 +120,42 @@ public class FinalYearNameSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case FinalYearNamePackage.ORGANISATION: {
+				Organisation organisation = (Organisation)theEObject;
+				T result = caseOrganisation(organisation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FinalYearNamePackage.SOFT_GOAL: {
+				SoftGoal softGoal = (SoftGoal)theEObject;
+				T result = caseSoftGoal(softGoal);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FinalYearNamePackage.RESOURCE: {
+				Resource resource = (Resource)theEObject;
+				T result = caseResource(resource);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FinalYearNamePackage.ATTACKER: {
+				Attacker attacker = (Attacker)theEObject;
+				T result = caseAttacker(attacker);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FinalYearNamePackage.VULNERABILITY: {
+				Vulnerability vulnerability = (Vulnerability)theEObject;
+				T result = caseVulnerability(vulnerability);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case FinalYearNamePackage.ATTACK_METHOD: {
+				AttackMethod attackMethod = (AttackMethod)theEObject;
+				T result = caseAttackMethod(attackMethod);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -256,6 +292,96 @@ public class FinalYearNameSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSecurityMechanism(SecurityMechanism object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Organisation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Organisation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOrganisation(Organisation object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Soft Goal</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Soft Goal</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSoftGoal(SoftGoal object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Resource</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Resource</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseResource(Resource object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Attacker</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Attacker</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAttacker(Attacker object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Vulnerability</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Vulnerability</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseVulnerability(Vulnerability object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Attack Method</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Attack Method</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAttackMethod(AttackMethod object) {
 		return null;
 	}
 

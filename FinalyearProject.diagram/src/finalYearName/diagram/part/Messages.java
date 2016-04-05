@@ -348,6 +348,66 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
+	public static String Organisation11CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Organisation11CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String SoftGoal12CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String SoftGoal12CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Resource13CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Resource13CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Attacker14CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Attacker14CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String Vulnerability15CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String Vulnerability15CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String AttackMethod16CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String AttackMethod16CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
 	public static String CommandName_OpenDiagram;
 
 	/**

@@ -279,6 +279,144 @@ public class FinalYearNameItemProviderAdapterFactory extends FinalYearNameAdapte
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link finalYearName.Organisation} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected OrganisationItemProvider organisationItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link finalYearName.Organisation}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createOrganisationAdapter() {
+		if (organisationItemProvider == null) {
+			organisationItemProvider = new OrganisationItemProvider(this);
+		}
+
+		return organisationItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link finalYearName.SoftGoal} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected SoftGoalItemProvider softGoalItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link finalYearName.SoftGoal}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createSoftGoalAdapter() {
+		if (softGoalItemProvider == null) {
+			softGoalItemProvider = new SoftGoalItemProvider(this);
+		}
+
+		return softGoalItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link finalYearName.Resource} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ResourceItemProvider resourceItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link finalYearName.Resource}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createResourceAdapter() {
+		if (resourceItemProvider == null) {
+			resourceItemProvider = new ResourceItemProvider(this);
+		}
+
+		return resourceItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link finalYearName.Attacker} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AttackerItemProvider attackerItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link finalYearName.Attacker}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAttackerAdapter() {
+		if (attackerItemProvider == null) {
+			attackerItemProvider = new AttackerItemProvider(this);
+		}
+
+		return attackerItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link finalYearName.Vulnerability} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected VulnerabilityItemProvider vulnerabilityItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link finalYearName.Vulnerability}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createVulnerabilityAdapter() {
+		if (vulnerabilityItemProvider == null) {
+			vulnerabilityItemProvider = new VulnerabilityItemProvider(this);
+		}
+
+		return vulnerabilityItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link finalYearName.AttackMethod} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected AttackMethodItemProvider attackMethodItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link finalYearName.AttackMethod}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createAttackMethodAdapter() {
+		if (attackMethodItemProvider == null) {
+			attackMethodItemProvider = new AttackMethodItemProvider(this);
+		}
+
+		return attackMethodItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -386,6 +524,12 @@ public class FinalYearNameItemProviderAdapterFactory extends FinalYearNameAdapte
 		if (securityConstraintItemProvider != null) securityConstraintItemProvider.dispose();
 		if (planItemProvider != null) planItemProvider.dispose();
 		if (securityMechanismItemProvider != null) securityMechanismItemProvider.dispose();
+		if (organisationItemProvider != null) organisationItemProvider.dispose();
+		if (softGoalItemProvider != null) softGoalItemProvider.dispose();
+		if (resourceItemProvider != null) resourceItemProvider.dispose();
+		if (attackerItemProvider != null) attackerItemProvider.dispose();
+		if (vulnerabilityItemProvider != null) vulnerabilityItemProvider.dispose();
+		if (attackMethodItemProvider != null) attackMethodItemProvider.dispose();
 	}
 
 }

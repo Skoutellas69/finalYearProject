@@ -15,6 +15,12 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasSecurityConstraint"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasPlan"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasSecurityMechanism"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasOrganisation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasSoftGoal"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasResource"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasAttacker"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/newEReference"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference My.ecore#//Model/hasAttackMethod"/>
     </genClasses>
     <genClasses ecoreClass="My.ecore#//Actor"/>
     <genClasses ecoreClass="My.ecore#//Goal"/>
@@ -27,5 +33,11 @@
     <genClasses ecoreClass="My.ecore#//SecurityConstraint"/>
     <genClasses ecoreClass="My.ecore#//Plan"/>
     <genClasses ecoreClass="My.ecore#//SecurityMechanism"/>
+    <genClasses ecoreClass="My.ecore#//Organisation"/>
+    <genClasses ecoreClass="My.ecore#//SoftGoal"/>
+    <genClasses ecoreClass="My.ecore#//Resource"/>
+    <genClasses ecoreClass="My.ecore#//Attacker"/>
+    <genClasses ecoreClass="My.ecore#//Vulnerability"/>
+    <genClasses ecoreClass="My.ecore#//AttackMethod"/>
   </genPackages>
 </genmodel:GenModel>

@@ -6,6 +6,7 @@ import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.XYLayout;
 import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
@@ -16,6 +17,8 @@ import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.ResizableShapeEditPolicy;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
@@ -68,23 +71,14 @@ public class ActorEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected LayoutEditPolicy createLayoutEditPolicy() {
-		org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy() {
+		XYLayoutEditPolicy lep = new XYLayoutEditPolicy() {
 
 			protected EditPolicy createChildEditPolicy(EditPart child) {
-				EditPolicy result = child
-						.getEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE);
+				EditPolicy result = super.createChildEditPolicy(child);
 				if (result == null) {
-					result = new NonResizableEditPolicy();
+					return new ResizableShapeEditPolicy();
 				}
 				return result;
-			}
-
-			protected Command getMoveChildrenCommand(Request request) {
-				return null;
-			}
-
-			protected Command getCreateCommand(CreateRequest request) {
-				return null;
 			}
 		};
 		return lep;
@@ -194,6 +188,7 @@ public class ActorEditPart extends ShapeNodeEditPart {
 		 * @generated
 		 */
 		public ActorFigure() {
+			this.setLayoutManager(new XYLayout());
 			this.setBackgroundColor(ColorConstants.darkGray);
 
 			this.setFont(THIS_FONT);
@@ -206,12 +201,12 @@ public class ActorEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			RoundedRectangle rrect0 = new RoundedRectangle();
+			RoundedRectangle roundedRectangleFigure0 = new RoundedRectangle();
 
-			rrect0.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8),
-					getMapMode().DPtoLP(8)));
+			roundedRectangleFigure0.setCornerDimensions(new Dimension(
+					getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
 
-			this.add(rrect0);
+			this.add(roundedRectangleFigure0);
 
 		}
 

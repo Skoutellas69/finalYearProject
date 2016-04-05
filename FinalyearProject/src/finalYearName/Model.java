@@ -22,6 +22,12 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link finalYearName.Model#getHasSecurityConstraint <em>Has Security Constraint</em>}</li>
  *   <li>{@link finalYearName.Model#getHasPlan <em>Has Plan</em>}</li>
  *   <li>{@link finalYearName.Model#getHasSecurityMechanism <em>Has Security Mechanism</em>}</li>
+ *   <li>{@link finalYearName.Model#getHasOrganisation <em>Has Organisation</em>}</li>
+ *   <li>{@link finalYearName.Model#getHasSoftGoal <em>Has Soft Goal</em>}</li>
+ *   <li>{@link finalYearName.Model#getHasResource <em>Has Resource</em>}</li>
+ *   <li>{@link finalYearName.Model#getHasAttacker <em>Has Attacker</em>}</li>
+ *   <li>{@link finalYearName.Model#getNewEReference <em>New EReference</em>}</li>
+ *   <li>{@link finalYearName.Model#getHasAttackMethod <em>Has Attack Method</em>}</li>
  * </ul>
  * </p>
  *
@@ -157,5 +163,101 @@ public interface Model extends EObject {
 	 * @generated
 	 */
 	EList<SecurityMechanism> getHasSecurityMechanism();
+
+	/**
+	 * Returns the value of the '<em><b>Has Organisation</b></em>' containment reference list.
+	 * The list contents are of type {@link finalYearName.Organisation}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has Organisation</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has Organisation</em>' containment reference list.
+	 * @see finalYearName.FinalYearNamePackage#getModel_HasOrganisation()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Organisation> getHasOrganisation();
+
+	/**
+	 * Returns the value of the '<em><b>Has Soft Goal</b></em>' containment reference list.
+	 * The list contents are of type {@link finalYearName.SoftGoal}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has Soft Goal</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has Soft Goal</em>' containment reference list.
+	 * @see finalYearName.FinalYearNamePackage#getModel_HasSoftGoal()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<SoftGoal> getHasSoftGoal();
+
+	/**
+	 * Returns the value of the '<em><b>Has Resource</b></em>' containment reference list.
+	 * The list contents are of type {@link finalYearName.Resource}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has Resource</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has Resource</em>' containment reference list.
+	 * @see finalYearName.FinalYearNamePackage#getModel_HasResource()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Resource> getHasResource();
+
+	/**
+	 * Returns the value of the '<em><b>Has Attacker</b></em>' containment reference list.
+	 * The list contents are of type {@link finalYearName.Attacker}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has Attacker</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has Attacker</em>' containment reference list.
+	 * @see finalYearName.FinalYearNamePackage#getModel_HasAttacker()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Attacker> getHasAttacker();
+
+	/**
+	 * Returns the value of the '<em><b>New EReference</b></em>' containment reference list.
+	 * The list contents are of type {@link finalYearName.Vulnerability}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>New EReference</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>New EReference</em>' containment reference list.
+	 * @see finalYearName.FinalYearNamePackage#getModel_NewEReference()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Vulnerability> getNewEReference();
+
+	/**
+	 * Returns the value of the '<em><b>Has Attack Method</b></em>' containment reference list.
+	 * The list contents are of type {@link finalYearName.AttackMethod}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Has Attack Method</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Has Attack Method</em>' containment reference list.
+	 * @see finalYearName.FinalYearNamePackage#getModel_HasAttackMethod()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<AttackMethod> getHasAttackMethod();
 
 } // Model

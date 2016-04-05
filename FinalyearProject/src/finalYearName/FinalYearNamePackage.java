@@ -138,13 +138,67 @@ public interface FinalYearNamePackage extends EPackage {
 	int MODEL__HAS_SECURITY_MECHANISM = 7;
 
 	/**
+	 * The feature id for the '<em><b>Has Organisation</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__HAS_ORGANISATION = 8;
+
+	/**
+	 * The feature id for the '<em><b>Has Soft Goal</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__HAS_SOFT_GOAL = 9;
+
+	/**
+	 * The feature id for the '<em><b>Has Resource</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__HAS_RESOURCE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Has Attacker</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__HAS_ATTACKER = 11;
+
+	/**
+	 * The feature id for the '<em><b>New EReference</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__NEW_EREFERENCE = 12;
+
+	/**
+	 * The feature id for the '<em><b>Has Attack Method</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL__HAS_ATTACK_METHOD = 13;
+
+	/**
 	 * The number of structural features of the '<em>Model</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_FEATURE_COUNT = 8;
+	int MODEL_FEATURE_COUNT = 14;
 
 	/**
 	 * The number of operations of the '<em>Model</em>' class.
@@ -399,6 +453,175 @@ public interface FinalYearNamePackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link finalYearName.impl.OrganisationImpl <em>Organisation</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see finalYearName.impl.OrganisationImpl
+	 * @see finalYearName.impl.FinalYearNamePackageImpl#getOrganisation()
+	 * @generated
+	 */
+	int ORGANISATION = 9;
+
+	/**
+	 * The number of structural features of the '<em>Organisation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORGANISATION_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Organisation</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ORGANISATION_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link finalYearName.impl.SoftGoalImpl <em>Soft Goal</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see finalYearName.impl.SoftGoalImpl
+	 * @see finalYearName.impl.FinalYearNamePackageImpl#getSoftGoal()
+	 * @generated
+	 */
+	int SOFT_GOAL = 10;
+
+	/**
+	 * The number of structural features of the '<em>Soft Goal</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOFT_GOAL_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Soft Goal</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SOFT_GOAL_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link finalYearName.impl.ResourceImpl <em>Resource</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see finalYearName.impl.ResourceImpl
+	 * @see finalYearName.impl.FinalYearNamePackageImpl#getResource()
+	 * @generated
+	 */
+	int RESOURCE = 11;
+
+	/**
+	 * The number of structural features of the '<em>Resource</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Resource</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESOURCE_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link finalYearName.impl.AttackerImpl <em>Attacker</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see finalYearName.impl.AttackerImpl
+	 * @see finalYearName.impl.FinalYearNamePackageImpl#getAttacker()
+	 * @generated
+	 */
+	int ATTACKER = 12;
+
+	/**
+	 * The number of structural features of the '<em>Attacker</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACKER_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Attacker</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACKER_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link finalYearName.impl.VulnerabilityImpl <em>Vulnerability</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see finalYearName.impl.VulnerabilityImpl
+	 * @see finalYearName.impl.FinalYearNamePackageImpl#getVulnerability()
+	 * @generated
+	 */
+	int VULNERABILITY = 13;
+
+	/**
+	 * The number of structural features of the '<em>Vulnerability</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VULNERABILITY_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Vulnerability</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int VULNERABILITY_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link finalYearName.impl.AttackMethodImpl <em>Attack Method</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see finalYearName.impl.AttackMethodImpl
+	 * @see finalYearName.impl.FinalYearNamePackageImpl#getAttackMethod()
+	 * @generated
+	 */
+	int ATTACK_METHOD = 14;
+
+	/**
+	 * The number of structural features of the '<em>Attack Method</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACK_METHOD_FEATURE_COUNT = 0;
+
+	/**
+	 * The number of operations of the '<em>Attack Method</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ATTACK_METHOD_OPERATION_COUNT = 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link finalYearName.Model <em>Model</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -495,6 +718,72 @@ public interface FinalYearNamePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getModel_HasSecurityMechanism();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link finalYearName.Model#getHasOrganisation <em>Has Organisation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Has Organisation</em>'.
+	 * @see finalYearName.Model#getHasOrganisation()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EReference getModel_HasOrganisation();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link finalYearName.Model#getHasSoftGoal <em>Has Soft Goal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Has Soft Goal</em>'.
+	 * @see finalYearName.Model#getHasSoftGoal()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EReference getModel_HasSoftGoal();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link finalYearName.Model#getHasResource <em>Has Resource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Has Resource</em>'.
+	 * @see finalYearName.Model#getHasResource()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EReference getModel_HasResource();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link finalYearName.Model#getHasAttacker <em>Has Attacker</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Has Attacker</em>'.
+	 * @see finalYearName.Model#getHasAttacker()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EReference getModel_HasAttacker();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link finalYearName.Model#getNewEReference <em>New EReference</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>New EReference</em>'.
+	 * @see finalYearName.Model#getNewEReference()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EReference getModel_NewEReference();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link finalYearName.Model#getHasAttackMethod <em>Has Attack Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Has Attack Method</em>'.
+	 * @see finalYearName.Model#getHasAttackMethod()
+	 * @see #getModel()
+	 * @generated
+	 */
+	EReference getModel_HasAttackMethod();
 
 	/**
 	 * Returns the meta object for class '{@link finalYearName.Actor <em>Actor</em>}'.
@@ -599,6 +888,66 @@ public interface FinalYearNamePackage extends EPackage {
 	EClass getSecurityMechanism();
 
 	/**
+	 * Returns the meta object for class '{@link finalYearName.Organisation <em>Organisation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Organisation</em>'.
+	 * @see finalYearName.Organisation
+	 * @generated
+	 */
+	EClass getOrganisation();
+
+	/**
+	 * Returns the meta object for class '{@link finalYearName.SoftGoal <em>Soft Goal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Soft Goal</em>'.
+	 * @see finalYearName.SoftGoal
+	 * @generated
+	 */
+	EClass getSoftGoal();
+
+	/**
+	 * Returns the meta object for class '{@link finalYearName.Resource <em>Resource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Resource</em>'.
+	 * @see finalYearName.Resource
+	 * @generated
+	 */
+	EClass getResource();
+
+	/**
+	 * Returns the meta object for class '{@link finalYearName.Attacker <em>Attacker</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Attacker</em>'.
+	 * @see finalYearName.Attacker
+	 * @generated
+	 */
+	EClass getAttacker();
+
+	/**
+	 * Returns the meta object for class '{@link finalYearName.Vulnerability <em>Vulnerability</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Vulnerability</em>'.
+	 * @see finalYearName.Vulnerability
+	 * @generated
+	 */
+	EClass getVulnerability();
+
+	/**
+	 * Returns the meta object for class '{@link finalYearName.AttackMethod <em>Attack Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Attack Method</em>'.
+	 * @see finalYearName.AttackMethod
+	 * @generated
+	 */
+	EClass getAttackMethod();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -696,6 +1045,54 @@ public interface FinalYearNamePackage extends EPackage {
 		EReference MODEL__HAS_SECURITY_MECHANISM = eINSTANCE.getModel_HasSecurityMechanism();
 
 		/**
+		 * The meta object literal for the '<em><b>Has Organisation</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL__HAS_ORGANISATION = eINSTANCE.getModel_HasOrganisation();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Soft Goal</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL__HAS_SOFT_GOAL = eINSTANCE.getModel_HasSoftGoal();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Resource</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL__HAS_RESOURCE = eINSTANCE.getModel_HasResource();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Attacker</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL__HAS_ATTACKER = eINSTANCE.getModel_HasAttacker();
+
+		/**
+		 * The meta object literal for the '<em><b>New EReference</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL__NEW_EREFERENCE = eINSTANCE.getModel_NewEReference();
+
+		/**
+		 * The meta object literal for the '<em><b>Has Attack Method</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MODEL__HAS_ATTACK_METHOD = eINSTANCE.getModel_HasAttackMethod();
+
+		/**
 		 * The meta object literal for the '{@link finalYearName.impl.ActorImpl <em>Actor</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -790,6 +1187,66 @@ public interface FinalYearNamePackage extends EPackage {
 		 * @generated
 		 */
 		EClass SECURITY_MECHANISM = eINSTANCE.getSecurityMechanism();
+
+		/**
+		 * The meta object literal for the '{@link finalYearName.impl.OrganisationImpl <em>Organisation</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see finalYearName.impl.OrganisationImpl
+		 * @see finalYearName.impl.FinalYearNamePackageImpl#getOrganisation()
+		 * @generated
+		 */
+		EClass ORGANISATION = eINSTANCE.getOrganisation();
+
+		/**
+		 * The meta object literal for the '{@link finalYearName.impl.SoftGoalImpl <em>Soft Goal</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see finalYearName.impl.SoftGoalImpl
+		 * @see finalYearName.impl.FinalYearNamePackageImpl#getSoftGoal()
+		 * @generated
+		 */
+		EClass SOFT_GOAL = eINSTANCE.getSoftGoal();
+
+		/**
+		 * The meta object literal for the '{@link finalYearName.impl.ResourceImpl <em>Resource</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see finalYearName.impl.ResourceImpl
+		 * @see finalYearName.impl.FinalYearNamePackageImpl#getResource()
+		 * @generated
+		 */
+		EClass RESOURCE = eINSTANCE.getResource();
+
+		/**
+		 * The meta object literal for the '{@link finalYearName.impl.AttackerImpl <em>Attacker</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see finalYearName.impl.AttackerImpl
+		 * @see finalYearName.impl.FinalYearNamePackageImpl#getAttacker()
+		 * @generated
+		 */
+		EClass ATTACKER = eINSTANCE.getAttacker();
+
+		/**
+		 * The meta object literal for the '{@link finalYearName.impl.VulnerabilityImpl <em>Vulnerability</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see finalYearName.impl.VulnerabilityImpl
+		 * @see finalYearName.impl.FinalYearNamePackageImpl#getVulnerability()
+		 * @generated
+		 */
+		EClass VULNERABILITY = eINSTANCE.getVulnerability();
+
+		/**
+		 * The meta object literal for the '{@link finalYearName.impl.AttackMethodImpl <em>Attack Method</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see finalYearName.impl.AttackMethodImpl
+		 * @see finalYearName.impl.FinalYearNamePackageImpl#getAttackMethod()
+		 * @generated
+		 */
+		EClass ATTACK_METHOD = eINSTANCE.getAttackMethod();
 
 	}
 

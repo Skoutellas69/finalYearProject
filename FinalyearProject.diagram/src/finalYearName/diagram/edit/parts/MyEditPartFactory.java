@@ -24,28 +24,52 @@ public class MyEditPartFactory implements EditPartFactory {
 			case finalYearName.diagram.edit.parts.ModelEditPart.VISUAL_ID:
 				return new finalYearName.diagram.edit.parts.ModelEditPart(view);
 
-			case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
-				return new finalYearName.diagram.edit.parts.ActorEditPart(view);
-
-			case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
-				return new finalYearName.diagram.edit.parts.SecurityConstraintEditPart(
+			case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.AttackMethodEditPart(
 						view);
 
-			case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
-				return new finalYearName.diagram.edit.parts.PlanEditPart(view);
-
-			case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
-				return new finalYearName.diagram.edit.parts.GoalEditPart(view);
-
-			case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
-				return new finalYearName.diagram.edit.parts.ThreatEditPart(view);
+			case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.OrganisationEditPart(
+						view);
 
 			case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
 				return new finalYearName.diagram.edit.parts.SecurityObjectiveEditPart(
 						view);
 
+			case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.ActorEditPart(view);
+
+			case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.PlanEditPart(view);
+
+			case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.ThreatEditPart(view);
+
+			case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.AttackerEditPart(
+						view);
+
+			case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.ResourceEditPart(
+						view);
+
+			case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.GoalEditPart(view);
+
 			case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
 				return new finalYearName.diagram.edit.parts.SecurityMechanismEditPart(
+						view);
+
+			case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.SecurityConstraintEditPart(
+						view);
+
+			case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.VulnerabilityEditPart(
+						view);
+
+			case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
+				return new finalYearName.diagram.edit.parts.SoftGoalEditPart(
 						view);
 
 			case finalYearName.diagram.edit.parts.DependencyLinkEditPart.VISUAL_ID:

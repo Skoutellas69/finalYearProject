@@ -61,25 +61,43 @@ public class ModelCanonicalEditPolicy extends CanonicalEditPolicy {
 			myFeaturesToSynchronize = new HashSet<EStructuralFeature>();
 			myFeaturesToSynchronize
 					.add(finalYearName.FinalYearNamePackage.eINSTANCE
-							.getModel_HasActor());
+							.getModel_HasAttackMethod());
 			myFeaturesToSynchronize
 					.add(finalYearName.FinalYearNamePackage.eINSTANCE
-							.getModel_HasSecurityConstraint());
-			myFeaturesToSynchronize
-					.add(finalYearName.FinalYearNamePackage.eINSTANCE
-							.getModel_HasPlan());
-			myFeaturesToSynchronize
-					.add(finalYearName.FinalYearNamePackage.eINSTANCE
-							.getModel_HasGoal());
-			myFeaturesToSynchronize
-					.add(finalYearName.FinalYearNamePackage.eINSTANCE
-							.getModel_HasThreat());
+							.getModel_HasOrganisation());
 			myFeaturesToSynchronize
 					.add(finalYearName.FinalYearNamePackage.eINSTANCE
 							.getModel_HasSecurityObjective());
 			myFeaturesToSynchronize
 					.add(finalYearName.FinalYearNamePackage.eINSTANCE
+							.getModel_HasActor());
+			myFeaturesToSynchronize
+					.add(finalYearName.FinalYearNamePackage.eINSTANCE
+							.getModel_HasPlan());
+			myFeaturesToSynchronize
+					.add(finalYearName.FinalYearNamePackage.eINSTANCE
+							.getModel_HasThreat());
+			myFeaturesToSynchronize
+					.add(finalYearName.FinalYearNamePackage.eINSTANCE
+							.getModel_HasAttacker());
+			myFeaturesToSynchronize
+					.add(finalYearName.FinalYearNamePackage.eINSTANCE
+							.getModel_HasResource());
+			myFeaturesToSynchronize
+					.add(finalYearName.FinalYearNamePackage.eINSTANCE
+							.getModel_HasGoal());
+			myFeaturesToSynchronize
+					.add(finalYearName.FinalYearNamePackage.eINSTANCE
 							.getModel_HasSecurityMechanism());
+			myFeaturesToSynchronize
+					.add(finalYearName.FinalYearNamePackage.eINSTANCE
+							.getModel_HasSecurityConstraint());
+			myFeaturesToSynchronize
+					.add(finalYearName.FinalYearNamePackage.eINSTANCE
+							.getModel_NewEReference());
+			myFeaturesToSynchronize
+					.add(finalYearName.FinalYearNamePackage.eINSTANCE
+							.getModel_HasSoftGoal());
 		}
 		return myFeaturesToSynchronize;
 	}
@@ -115,13 +133,19 @@ public class ModelCanonicalEditPolicy extends CanonicalEditPolicy {
 		int visualID = finalYearName.diagram.part.MyVisualIDRegistry
 				.getVisualID(view);
 		switch (visualID) {
-		case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
-		case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
-		case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
-		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
-		case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID:
 		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
 		case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID:
+		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
 			return true;
 		}
 		return false;
@@ -284,42 +308,18 @@ public class ModelCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID: {
+		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
-						.getActor_2001ContainedLinks(view));
+						.getAttackMethod_2008ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
-		case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID: {
+		case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
-						.getSecurityConstraint_2006ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
-						.getPlan_2004ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
-						.getGoal_2002ContainedLinks(view));
-			}
-			domain2NotationMap.putView(view.getElement(), view);
-			break;
-		}
-		case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID: {
-			if (!domain2NotationMap.containsKey(view.getElement())) {
-				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
-						.getThreat_2005ContainedLinks(view));
+						.getOrganisation_2009ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
@@ -332,10 +332,82 @@ public class ModelCanonicalEditPolicy extends CanonicalEditPolicy {
 			domain2NotationMap.putView(view.getElement(), view);
 			break;
 		}
+		case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
+						.getActor_2001ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
+						.getPlan_2004ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
+						.getThreat_2005ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
+						.getAttacker_2010ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
+						.getResource_2011ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
+						.getGoal_2002ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
 		case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID: {
 			if (!domain2NotationMap.containsKey(view.getElement())) {
 				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
 						.getSecurityMechanism_2003ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
+						.getSecurityConstraint_2006ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
+						.getVulnerability_2012ContainedLinks(view));
+			}
+			domain2NotationMap.putView(view.getElement(), view);
+			break;
+		}
+		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID: {
+			if (!domain2NotationMap.containsKey(view.getElement())) {
+				result.addAll(finalYearName.diagram.part.MyDiagramUpdater
+						.getSoftGoal_2013ContainedLinks(view));
 			}
 			domain2NotationMap.putView(view.getElement(), view);
 			break;

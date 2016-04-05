@@ -104,6 +104,30 @@ public class FinalYearNameAdapterFactory extends AdapterFactoryImpl {
 				return createSecurityMechanismAdapter();
 			}
 			@Override
+			public Adapter caseOrganisation(Organisation object) {
+				return createOrganisationAdapter();
+			}
+			@Override
+			public Adapter caseSoftGoal(SoftGoal object) {
+				return createSoftGoalAdapter();
+			}
+			@Override
+			public Adapter caseResource(Resource object) {
+				return createResourceAdapter();
+			}
+			@Override
+			public Adapter caseAttacker(Attacker object) {
+				return createAttackerAdapter();
+			}
+			@Override
+			public Adapter caseVulnerability(Vulnerability object) {
+				return createVulnerabilityAdapter();
+			}
+			@Override
+			public Adapter caseAttackMethod(AttackMethod object) {
+				return createAttackMethodAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -246,6 +270,90 @@ public class FinalYearNameAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSecurityMechanismAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link finalYearName.Organisation <em>Organisation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see finalYearName.Organisation
+	 * @generated
+	 */
+	public Adapter createOrganisationAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link finalYearName.SoftGoal <em>Soft Goal</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see finalYearName.SoftGoal
+	 * @generated
+	 */
+	public Adapter createSoftGoalAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link finalYearName.Resource <em>Resource</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see finalYearName.Resource
+	 * @generated
+	 */
+	public Adapter createResourceAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link finalYearName.Attacker <em>Attacker</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see finalYearName.Attacker
+	 * @generated
+	 */
+	public Adapter createAttackerAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link finalYearName.Vulnerability <em>Vulnerability</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see finalYearName.Vulnerability
+	 * @generated
+	 */
+	public Adapter createVulnerabilityAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link finalYearName.AttackMethod <em>Attack Method</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see finalYearName.AttackMethod
+	 * @generated
+	 */
+	public Adapter createAttackMethodAdapter() {
 		return null;
 	}
 

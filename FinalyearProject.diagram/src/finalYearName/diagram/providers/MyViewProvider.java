@@ -134,13 +134,19 @@ public class MyViewProvider extends AbstractProvider implements IViewProvider {
 					return false; // foreign diagram
 				}
 				switch (visualID) {
-				case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
-				case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
-				case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
-				case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
-				case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID:
 				case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
 				case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID:
+				case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
 					if (domainElement == null
 							|| visualID != finalYearName.diagram.part.MyVisualIDRegistry
 									.getNodeVisualID(op.getContainerView(),
@@ -153,13 +159,19 @@ public class MyViewProvider extends AbstractProvider implements IViewProvider {
 				}
 			}
 		}
-		return finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID == visualID
-				|| finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID == visualID
-				|| finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID == visualID
-				|| finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID == visualID
-				|| finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID == visualID
+		return finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID == visualID
 				|| finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID == visualID
-				|| finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID == visualID;
+				|| finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID == visualID
+				|| finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID == visualID;
 	}
 
 	/**
@@ -219,27 +231,45 @@ public class MyViewProvider extends AbstractProvider implements IViewProvider {
 					.getVisualID(semanticHint);
 		}
 		switch (visualID) {
-		case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
-			return createActor_2001(domainElement, containerView, index,
+		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
+			return createAttackMethod_2008(domainElement, containerView, index,
 					persisted, preferencesHint);
-		case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
-			return createSecurityConstraint_2006(domainElement, containerView,
-					index, persisted, preferencesHint);
-		case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
-			return createPlan_2004(domainElement, containerView, index,
-					persisted, preferencesHint);
-		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
-			return createGoal_2002(domainElement, containerView, index,
-					persisted, preferencesHint);
-		case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
-			return createThreat_2005(domainElement, containerView, index,
+		case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID:
+			return createOrganisation_2009(domainElement, containerView, index,
 					persisted, preferencesHint);
 		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
 			return createSecurityObjective_2007(domainElement, containerView,
 					index, persisted, preferencesHint);
+		case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
+			return createActor_2001(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
+			return createPlan_2004(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
+			return createThreat_2005(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
+			return createAttacker_2010(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
+			return createResource_2011(domainElement, containerView, index,
+					persisted, preferencesHint);
+		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+			return createGoal_2002(domainElement, containerView, index,
+					persisted, preferencesHint);
 		case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
 			return createSecurityMechanism_2003(domainElement, containerView,
 					index, persisted, preferencesHint);
+		case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
+			return createSecurityConstraint_2006(domainElement, containerView,
+					index, persisted, preferencesHint);
+		case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID:
+			return createVulnerability_2012(domainElement, containerView,
+					index, persisted, preferencesHint);
+		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
+			return createSoftGoal_2013(domainElement, containerView, index,
+					persisted, preferencesHint);
 		}
 		// can't happen, provided #provides(CreateNodeViewOperation) is correct
 		return null;
@@ -267,6 +297,94 @@ public class MyViewProvider extends AbstractProvider implements IViewProvider {
 	/**
 	 * @generated
 	 */
+	public Node createAttackMethod_2008(EObject domainElement,
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(finalYearName.diagram.part.MyVisualIDRegistry
+				.getType(finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+	public Node createOrganisation_2009(EObject domainElement,
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(finalYearName.diagram.part.MyVisualIDRegistry
+				.getType(finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
 	public Node createSecurityConstraint_2006(EObject domainElement,
 			View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
@@ -274,6 +392,93 @@ public class MyViewProvider extends AbstractProvider implements IViewProvider {
 		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
 		node.setType(finalYearName.diagram.part.MyVisualIDRegistry
 				.getType(finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+	public Node createVulnerability_2012(EObject domainElement,
+			View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(finalYearName.diagram.part.MyVisualIDRegistry
+				.getType(finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+	public Node createSoftGoal_2013(EObject domainElement, View containerView,
+			int index, boolean persisted, PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(finalYearName.diagram.part.MyVisualIDRegistry
+				.getType(finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID));
 		ViewUtil.insertChildView(containerView, node, index, persisted);
 		node.setElement(domainElement);
 		stampShortcut(containerView, node);
@@ -462,6 +667,92 @@ public class MyViewProvider extends AbstractProvider implements IViewProvider {
 			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
 					.intValue());
 		}
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+	public Node createAttacker_2010(EObject domainElement, View containerView,
+			int index, boolean persisted, PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(finalYearName.diagram.part.MyVisualIDRegistry
+				.getType(finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		return node;
+	}
+
+	/**
+	 * @generated
+	 */
+	public Node createResource_2011(EObject domainElement, View containerView,
+			int index, boolean persisted, PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(finalYearName.diagram.part.MyVisualIDRegistry
+				.getType(finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		stampShortcut(containerView, node);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint
+				.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node
+				.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore,
+					IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter
+					.getColor(prefStore, IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB)
+					.intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(
+				prefStore, IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node,
+				NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
 		return node;
 	}
 

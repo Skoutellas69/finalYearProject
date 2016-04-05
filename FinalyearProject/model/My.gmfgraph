@@ -18,6 +18,8 @@
       <actualFigure
           xsi:type="gmfgraph:Rectangle"
           name="ActorFigure">
+        <layout
+            xsi:type="gmfgraph:XYLayout"/>
         <backgroundColor
             xsi:type="gmfgraph:ConstantColor"
             value="darkGray"/>
@@ -25,7 +27,8 @@
             xsi:type="gmfgraph:BasicFont"
             faceName="ACTOR"/>
         <children
-            xsi:type="gmfgraph:RoundedRectangle"/>
+            xsi:type="gmfgraph:RoundedRectangle"
+            name="RoundedRectangleFigure"/>
       </actualFigure>
     </descriptors>
     <descriptors
@@ -117,6 +120,9 @@
       <actualFigure
           xsi:type="gmfgraph:Rectangle"
           name="SecurityMechanismFigure">
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="orange"/>
         <children
             xsi:type="gmfgraph:Polygon"
             name="SecurityMechanism">
@@ -125,6 +131,58 @@
               value="orange"/>
         </children>
       </actualFigure>
+    </descriptors>
+    <descriptors
+        name="OrganisationFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="OrganisationFigure"
+          lineKind="LINE_DASH"/>
+    </descriptors>
+    <descriptors
+        name="SoftGoalFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="SoftGoalFigure"/>
+    </descriptors>
+    <descriptors
+        name="ResourceFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="ResourceFigure"/>
+    </descriptors>
+    <descriptors
+        name="AttackerFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="AttackerFigure">
+        <children
+            xsi:type="gmfgraph:Polygon"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors
+        name="VulnerabilityFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="VulnerabilityFigure"/>
+    </descriptors>
+    <descriptors
+        name="AttackMethodFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Rectangle"
+          name="AttackMethodFigure"/>
+    </descriptors>
+    <descriptors
+        name="Polygon">
+      <actualFigure
+          xsi:type="gmfgraph:Polygon"
+          name="Polygon">
+        <children
+            xsi:type="gmfgraph:CustomFigure"/>
+      </actualFigure>
+      <accessors
+          accessor="getFigurePolygon"
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
     </descriptors>
   </figures>
   <nodes
@@ -147,7 +205,25 @@
       figure="PlanFigure"/>
   <nodes
       name="SecurityMechanism"
-      figure="SecurityMechanismFigure"/>
+      figure="Polygon"/>
+  <nodes
+      name="Organisation"
+      figure="OrganisationFigure"/>
+  <nodes
+      name="SoftGoal"
+      figure="SoftGoalFigure"/>
+  <nodes
+      name="Resource"
+      figure="ResourceFigure"/>
+  <nodes
+      name="Attacker"
+      figure="AttackerFigure"/>
+  <nodes
+      name="Vulnerability"
+      figure="VulnerabilityFigure"/>
+  <nodes
+      name="AttackMethod"
+      figure="AttackMethodFigure"/>
   <connections
       name="DependencyLink"
       figure="DependencyLinkFigure"/>

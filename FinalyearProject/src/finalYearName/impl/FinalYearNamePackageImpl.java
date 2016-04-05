@@ -3,17 +3,23 @@
 package finalYearName.impl;
 
 import finalYearName.Actor;
+import finalYearName.AttackMethod;
+import finalYearName.Attacker;
 import finalYearName.DependencyLink;
 import finalYearName.FinalYearNameFactory;
 import finalYearName.FinalYearNamePackage;
 import finalYearName.Goal;
 import finalYearName.Model;
+import finalYearName.Organisation;
 import finalYearName.Plan;
+import finalYearName.Resource;
 import finalYearName.SecurityConstraint;
 import finalYearName.SecurityMechanism;
 import finalYearName.SecurityObjective;
+import finalYearName.SoftGoal;
 import finalYearName.Threat;
 
+import finalYearName.Vulnerability;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -89,6 +95,48 @@ public class FinalYearNamePackageImpl extends EPackageImpl implements FinalYearN
 	 * @generated
 	 */
 	private EClass securityMechanismEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass organisationEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass softGoalEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass resourceEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass attackerEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vulnerabilityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass attackMethodEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -237,6 +285,60 @@ public class FinalYearNamePackageImpl extends EPackageImpl implements FinalYearN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getModel_HasOrganisation() {
+		return (EReference)modelEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModel_HasSoftGoal() {
+		return (EReference)modelEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModel_HasResource() {
+		return (EReference)modelEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModel_HasAttacker() {
+		return (EReference)modelEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModel_NewEReference() {
+		return (EReference)modelEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getModel_HasAttackMethod() {
+		return (EReference)modelEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getActor() {
 		return actorEClass;
 	}
@@ -327,6 +429,60 @@ public class FinalYearNamePackageImpl extends EPackageImpl implements FinalYearN
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getOrganisation() {
+		return organisationEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getSoftGoal() {
+		return softGoalEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getResource() {
+		return resourceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAttacker() {
+		return attackerEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVulnerability() {
+		return vulnerabilityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAttackMethod() {
+		return attackMethodEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public FinalYearNameFactory getFinalYearNameFactory() {
 		return (FinalYearNameFactory)getEFactoryInstance();
 	}
@@ -359,6 +515,12 @@ public class FinalYearNamePackageImpl extends EPackageImpl implements FinalYearN
 		createEReference(modelEClass, MODEL__HAS_SECURITY_CONSTRAINT);
 		createEReference(modelEClass, MODEL__HAS_PLAN);
 		createEReference(modelEClass, MODEL__HAS_SECURITY_MECHANISM);
+		createEReference(modelEClass, MODEL__HAS_ORGANISATION);
+		createEReference(modelEClass, MODEL__HAS_SOFT_GOAL);
+		createEReference(modelEClass, MODEL__HAS_RESOURCE);
+		createEReference(modelEClass, MODEL__HAS_ATTACKER);
+		createEReference(modelEClass, MODEL__NEW_EREFERENCE);
+		createEReference(modelEClass, MODEL__HAS_ATTACK_METHOD);
 
 		actorEClass = createEClass(ACTOR);
 
@@ -377,6 +539,18 @@ public class FinalYearNamePackageImpl extends EPackageImpl implements FinalYearN
 		planEClass = createEClass(PLAN);
 
 		securityMechanismEClass = createEClass(SECURITY_MECHANISM);
+
+		organisationEClass = createEClass(ORGANISATION);
+
+		softGoalEClass = createEClass(SOFT_GOAL);
+
+		resourceEClass = createEClass(RESOURCE);
+
+		attackerEClass = createEClass(ATTACKER);
+
+		vulnerabilityEClass = createEClass(VULNERABILITY);
+
+		attackMethodEClass = createEClass(ATTACK_METHOD);
 	}
 
 	/**
@@ -418,6 +592,12 @@ public class FinalYearNamePackageImpl extends EPackageImpl implements FinalYearN
 		initEReference(getModel_HasSecurityConstraint(), this.getSecurityConstraint(), null, "hasSecurityConstraint", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getModel_HasPlan(), this.getPlan(), null, "hasPlan", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getModel_HasSecurityMechanism(), this.getSecurityMechanism(), null, "hasSecurityMechanism", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModel_HasOrganisation(), this.getOrganisation(), null, "hasOrganisation", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModel_HasSoftGoal(), this.getSoftGoal(), null, "hasSoftGoal", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModel_HasResource(), this.getResource(), null, "hasResource", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModel_HasAttacker(), this.getAttacker(), null, "hasAttacker", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModel_NewEReference(), this.getVulnerability(), null, "newEReference", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getModel_HasAttackMethod(), this.getAttackMethod(), null, "hasAttackMethod", null, 0, -1, Model.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(actorEClass, Actor.class, "Actor", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -436,6 +616,18 @@ public class FinalYearNamePackageImpl extends EPackageImpl implements FinalYearN
 		initEClass(planEClass, Plan.class, "Plan", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(securityMechanismEClass, SecurityMechanism.class, "SecurityMechanism", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(organisationEClass, Organisation.class, "Organisation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(softGoalEClass, SoftGoal.class, "SoftGoal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(resourceEClass, Resource.class, "Resource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(attackerEClass, Attacker.class, "Attacker", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(vulnerabilityEClass, Vulnerability.class, "Vulnerability", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(attackMethodEClass, AttackMethod.class, "AttackMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

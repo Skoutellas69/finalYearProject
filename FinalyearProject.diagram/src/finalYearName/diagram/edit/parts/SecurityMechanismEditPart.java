@@ -90,14 +90,14 @@ public class SecurityMechanismEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure createNodeShape() {
-		return primaryShape = new SecurityMechanismFigure();
+		return primaryShape = new PolygonShape();
 	}
 
 	/**
 	 * @generated
 	 */
-	public SecurityMechanismFigure getPrimaryShape() {
-		return (SecurityMechanismFigure) primaryShape;
+	public PolygonShape getPrimaryShape() {
+		return (PolygonShape) primaryShape;
 	}
 
 	/**
@@ -179,34 +179,6 @@ public class SecurityMechanismEditPart extends ShapeNodeEditPart {
 		if (primaryShape instanceof Shape) {
 			((Shape) primaryShape).setLineStyle(style);
 		}
-	}
-
-	/**
-	 * @generated
-	 */
-	public class SecurityMechanismFigure extends RectangleFigure {
-
-		/**
-		 * @generated
-		 */
-		public SecurityMechanismFigure() {
-			createContents();
-		}
-
-		/**
-		 * @generated
-		 */
-		private void createContents() {
-
-			PolygonShape securityMechanism0 = new PolygonShape();
-
-			securityMechanism0.setFill(true);
-			securityMechanism0.setBackgroundColor(ColorConstants.orange);
-
-			this.add(securityMechanism0);
-
-		}
-
 	}
 
 }
