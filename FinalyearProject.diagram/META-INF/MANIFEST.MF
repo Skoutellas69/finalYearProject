@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: finalYearName.diagram.part.MyDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: finalYearName.diagram.edit.parts,
+Export-Package: finalYearName.diagram.edit.parts, 
  finalYearName.diagram.part,
  finalYearName.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,

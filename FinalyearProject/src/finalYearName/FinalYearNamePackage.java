@@ -451,7 +451,6 @@ public interface FinalYearNamePackage extends EPackage {
 	 */
 	int SECURITY_MECHANISM_OPERATION_COUNT = 0;
 
-
 	/**
 	 * The meta object id for the '{@link finalYearName.impl.OrganisationImpl <em>Organisation</em>}' class.
 	 * <!-- begin-user-doc -->

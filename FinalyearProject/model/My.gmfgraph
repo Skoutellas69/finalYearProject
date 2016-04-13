@@ -34,15 +34,11 @@
     <descriptors
         name="GoalFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="GoalFigure">
+          xsi:type="gmfgraph:RoundedRectangle">
         <children
-            xsi:type="gmfgraph:RoundedRectangle"
-            name="GOAL">
-          <backgroundColor
-              xsi:type="gmfgraph:ConstantColor"
-              value="lightBlue"/>
-        </children>
+            xsi:type="gmfgraph:Label"
+            name="a"
+            text="aggelos"/>
       </actualFigure>
     </descriptors>
     <descriptors
@@ -119,18 +115,7 @@
         name="SecurityMechanismFigure">
       <actualFigure
           xsi:type="gmfgraph:Rectangle"
-          name="SecurityMechanismFigure">
-        <backgroundColor
-            xsi:type="gmfgraph:ConstantColor"
-            value="orange"/>
-        <children
-            xsi:type="gmfgraph:Polygon"
-            name="SecurityMechanism">
-          <backgroundColor
-              xsi:type="gmfgraph:ConstantColor"
-              value="orange"/>
-        </children>
-      </actualFigure>
+          name="SecurityMechanismFigure"/>
     </descriptors>
     <descriptors
         name="OrganisationFigure">
@@ -181,8 +166,7 @@
             xsi:type="gmfgraph:CustomFigure"/>
       </actualFigure>
       <accessors
-          accessor="getFigurePolygon"
-          figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
+          accessor="getFigurePolygon"/>
     </descriptors>
   </figures>
   <nodes
@@ -205,7 +189,7 @@
       figure="PlanFigure"/>
   <nodes
       name="SecurityMechanism"
-      figure="Polygon"/>
+      figure="SecurityMechanismFigure"/>
   <nodes
       name="Organisation"
       figure="OrganisationFigure"/>

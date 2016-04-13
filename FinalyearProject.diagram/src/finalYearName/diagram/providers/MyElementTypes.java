@@ -50,26 +50,10 @@ public class MyElementTypes {
 	 * @generated
 	 */
 	public static final IElementType AttackMethod_2008 = getElementType("FinalyearProject.diagram.AttackMethod_2008"); //$NON-NLS-1$
-
 	/**
 	 * @generated
 	 */
 	public static final IElementType Organisation_2009 = getElementType("FinalyearProject.diagram.Organisation_2009"); //$NON-NLS-1$
-
-	/**
-	 * @generated
-	 */
-	public static final IElementType SecurityConstraint_2006 = getElementType("FinalyearProject.diagram.SecurityConstraint_2006"); //$NON-NLS-1$
-	/**
-	 * @generated
-	 */
-	public static final IElementType Vulnerability_2012 = getElementType("FinalyearProject.diagram.Vulnerability_2012"); //$NON-NLS-1$
-
-	/**
-	 * @generated
-	 */
-	public static final IElementType SoftGoal_2013 = getElementType("FinalyearProject.diagram.SoftGoal_2013"); //$NON-NLS-1$
-
 	/**
 	 * @generated
 	 */
@@ -77,11 +61,11 @@ public class MyElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType SecurityMechanism_2003 = getElementType("FinalyearProject.diagram.SecurityMechanism_2003"); //$NON-NLS-1$
+	public static final IElementType Actor_2001 = getElementType("FinalyearProject.diagram.Actor_2001"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
-	public static final IElementType Actor_2001 = getElementType("FinalyearProject.diagram.Actor_2001"); //$NON-NLS-1$
+	public static final IElementType Plan_2004 = getElementType("FinalyearProject.diagram.Plan_2004"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */
@@ -90,12 +74,10 @@ public class MyElementTypes {
 	 * @generated
 	 */
 	public static final IElementType Attacker_2010 = getElementType("FinalyearProject.diagram.Attacker_2010"); //$NON-NLS-1$
-
 	/**
 	 * @generated
 	 */
 	public static final IElementType Resource_2011 = getElementType("FinalyearProject.diagram.Resource_2011"); //$NON-NLS-1$
-
 	/**
 	 * @generated
 	 */
@@ -103,7 +85,19 @@ public class MyElementTypes {
 	/**
 	 * @generated
 	 */
-	public static final IElementType Plan_2004 = getElementType("FinalyearProject.diagram.Plan_2004"); //$NON-NLS-1$
+	public static final IElementType SecurityMechanism_2003 = getElementType("FinalyearProject.diagram.SecurityMechanism_2003"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType SecurityConstraint_2006 = getElementType("FinalyearProject.diagram.SecurityConstraint_2006"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType Vulnerability_2012 = getElementType("FinalyearProject.diagram.Vulnerability_2012"); //$NON-NLS-1$
+	/**
+	 * @generated
+	 */
+	public static final IElementType SoftGoal_2013 = getElementType("FinalyearProject.diagram.SoftGoal_2013"); //$NON-NLS-1$
 	/**
 	 * @generated
 	 */

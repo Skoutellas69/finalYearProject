@@ -344,30 +344,6 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityConstraint_2006ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getVulnerability_2012ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityObjective_2007ContainedLinks(
 			View view) {
 		return Collections.emptyList();
@@ -376,7 +352,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003ContainedLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getActor_2001ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -384,7 +360,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getActor_2001ContainedLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getPlan_2004ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -424,7 +400,31 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getPlan_2004ContainedLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityConstraint_2006ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getVulnerability_2012ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -456,30 +456,6 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityConstraint_2006IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getVulnerability_2012IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityObjective_2007IncomingLinks(
 			View view) {
 		return Collections.emptyList();
@@ -488,7 +464,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getActor_2001IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -496,7 +472,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getActor_2001IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getPlan_2004IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -543,7 +519,31 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getPlan_2004IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityConstraint_2006IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getVulnerability_2012IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -575,39 +575,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityConstraint_2006OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getVulnerability_2012OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityObjective_2007OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -622,6 +590,14 @@ public class MyDiagramUpdater {
 		LinkedList<finalYearName.diagram.part.MyLinkDescriptor> result = new LinkedList<finalYearName.diagram.part.MyLinkDescriptor>();
 		result.addAll(getOutgoingTypeModelFacetLinks_DependencyLink_4001(modelElement));
 		return result;
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getPlan_2004OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
 	}
 
 	/**
@@ -659,7 +635,31 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getPlan_2004OutgoingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityConstraint_2006OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getVulnerability_2012OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}

@@ -17,8 +17,8 @@ import finalYearName.SecurityMechanism;
 import finalYearName.SecurityObjective;
 import finalYearName.SoftGoal;
 import finalYearName.Threat;
-
 import finalYearName.Vulnerability;
+
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.NotificationChain;

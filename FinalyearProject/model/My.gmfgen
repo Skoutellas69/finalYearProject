@@ -25,7 +25,6 @@
         visualID="2008"
         editPartClassName="AttackMethodEditPart"
         itemSemanticEditPolicyClassName="AttackMethodItemSemanticEditPolicy"
-        notationViewFactoryClassName="AttackMethodViewFactory"
         canonicalEditPolicyClassName="AttackMethodCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="AttackMethodGraphicalNodeEditPolicy"
         createCommandClassName="AttackMethodCreateCommand">
@@ -50,7 +49,6 @@
         visualID="2009"
         editPartClassName="OrganisationEditPart"
         itemSemanticEditPolicyClassName="OrganisationItemSemanticEditPolicy"
-        notationViewFactoryClassName="OrganisationViewFactory"
         canonicalEditPolicyClassName="OrganisationCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="OrganisationGraphicalNodeEditPolicy"
         createCommandClassName="OrganisationCreateCommand">
@@ -76,7 +74,6 @@
         visualID="2007"
         editPartClassName="SecurityObjectiveEditPart"
         itemSemanticEditPolicyClassName="SecurityObjectiveItemSemanticEditPolicy"
-        notationViewFactoryClassName="SecurityObjectiveViewFactory"
         canonicalEditPolicyClassName="SecurityObjectiveCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="SecurityObjectiveGraphicalNodeEditPolicy"
         createCommandClassName="SecurityObjectiveCreateCommand">
@@ -102,7 +99,6 @@
         visualID="2001"
         editPartClassName="ActorEditPart"
         itemSemanticEditPolicyClassName="ActorItemSemanticEditPolicy"
-        notationViewFactoryClassName="ActorViewFactory"
         canonicalEditPolicyClassName="ActorCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="ActorGraphicalNodeEditPolicy"
         createCommandClassName="ActorCreateCommand">
@@ -134,7 +130,6 @@
         visualID="2004"
         editPartClassName="PlanEditPart"
         itemSemanticEditPolicyClassName="PlanItemSemanticEditPolicy"
-        notationViewFactoryClassName="PlanViewFactory"
         canonicalEditPolicyClassName="PlanCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="PlanGraphicalNodeEditPolicy"
         createCommandClassName="PlanCreateCommand">
@@ -160,7 +155,6 @@
         visualID="2005"
         editPartClassName="ThreatEditPart"
         itemSemanticEditPolicyClassName="ThreatItemSemanticEditPolicy"
-        notationViewFactoryClassName="ThreatViewFactory"
         canonicalEditPolicyClassName="ThreatCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="ThreatGraphicalNodeEditPolicy"
         createCommandClassName="ThreatCreateCommand">
@@ -190,7 +184,6 @@
         visualID="2010"
         editPartClassName="AttackerEditPart"
         itemSemanticEditPolicyClassName="AttackerItemSemanticEditPolicy"
-        notationViewFactoryClassName="AttackerViewFactory"
         canonicalEditPolicyClassName="AttackerCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="AttackerGraphicalNodeEditPolicy"
         createCommandClassName="AttackerCreateCommand">
@@ -216,7 +209,6 @@
         visualID="2011"
         editPartClassName="ResourceEditPart"
         itemSemanticEditPolicyClassName="ResourceItemSemanticEditPolicy"
-        notationViewFactoryClassName="ResourceViewFactory"
         canonicalEditPolicyClassName="ResourceCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="ResourceGraphicalNodeEditPolicy"
         createCommandClassName="ResourceCreateCommand">
@@ -241,7 +233,6 @@
         visualID="2002"
         editPartClassName="GoalEditPart"
         itemSemanticEditPolicyClassName="GoalItemSemanticEditPolicy"
-        notationViewFactoryClassName="GoalViewFactory"
         canonicalEditPolicyClassName="GoalCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="GoalGraphicalNodeEditPolicy"
         createCommandClassName="GoalCreateCommand">
@@ -253,7 +244,7 @@
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
           className="GoalFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GoalFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GoalFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RoundedRectangle gOAL0 = new org.eclipse.draw2d.RoundedRectangle();&#xA;&#xA;gOAL0.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;gOAL0.setBackgroundColor(org.eclipse.draw2d.ColorConstants.lightBlue);&#xA;&#xA;this.add(gOAL0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GoalFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GoalFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel a0 = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;a0.setText(&quot;aggelos&quot;);&#xA;&#xA;this.add(a0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet>
         <metaClass
             href="My.genmodel#//finalYearName/Goal"/>
@@ -267,7 +258,6 @@
         visualID="2003"
         editPartClassName="SecurityMechanismEditPart"
         itemSemanticEditPolicyClassName="SecurityMechanismItemSemanticEditPolicy"
-        notationViewFactoryClassName="SecurityMechanismViewFactory"
         canonicalEditPolicyClassName="SecurityMechanismCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="SecurityMechanismGraphicalNodeEditPolicy"
         createCommandClassName="SecurityMechanismCreateCommand">
@@ -278,7 +268,7 @@
           editHelperClassName="SecurityMechanismEditHelper"/>
       <viewmap
           xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.draw2d.PolygonShape"/>
+          figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
       <modelFacet>
         <metaClass
             href="My.genmodel#//finalYearName/SecurityMechanism"/>
@@ -292,7 +282,6 @@
         visualID="2006"
         editPartClassName="SecurityConstraintEditPart"
         itemSemanticEditPolicyClassName="SecurityConstraintItemSemanticEditPolicy"
-        notationViewFactoryClassName="SecurityConstraintViewFactory"
         canonicalEditPolicyClassName="SecurityConstraintCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="SecurityConstraintGraphicalNodeEditPolicy"
         createCommandClassName="SecurityConstraintCreateCommand">
@@ -318,7 +307,6 @@
         visualID="2012"
         editPartClassName="VulnerabilityEditPart"
         itemSemanticEditPolicyClassName="VulnerabilityItemSemanticEditPolicy"
-        notationViewFactoryClassName="VulnerabilityViewFactory"
         canonicalEditPolicyClassName="VulnerabilityCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="VulnerabilityGraphicalNodeEditPolicy"
         createCommandClassName="VulnerabilityCreateCommand">
@@ -343,7 +331,6 @@
         visualID="2013"
         editPartClassName="SoftGoalEditPart"
         itemSemanticEditPolicyClassName="SoftGoalItemSemanticEditPolicy"
-        notationViewFactoryClassName="SoftGoalViewFactory"
         canonicalEditPolicyClassName="SoftGoalCanonicalEditPolicy"
         graphicalNodeEditPolicyClassName="SoftGoalGraphicalNodeEditPolicy"
         createCommandClassName="SoftGoalCreateCommand">
@@ -368,7 +355,6 @@
         visualID="4001"
         editPartClassName="DependencyLinkEditPart"
         itemSemanticEditPolicyClassName="DependencyLinkItemSemanticEditPolicy"
-        notationViewFactoryClassName="DependencyLinkViewFactory"
         createCommandClassName="DependencyLinkCreateCommand"
         reorientCommandClassName="DependencyLinkReorientCommand">
       <diagramRunTimeClass
@@ -398,11 +384,6 @@
           title="finalYearName">
         <entries
             xsi:type="gmfgen:ToolEntry"
-            title="Actor"
-            description="Create new Actor"
-            genNodes="//@diagram/@topLevelNodes.3"/>
-        <entries
-            xsi:type="gmfgen:ToolEntry"
             title="Goal"
             description="Create new Goal"
             genNodes="//@diagram/@topLevelNodes.8"/>
@@ -411,14 +392,6 @@
             title="DependencyLink"
             description="Create new DependencyLink"
             genLinks="//@diagram/@links.0"/>
-        <entries
-            xsi:type="gmfgen:ToolEntry"
-            title="DependencyLinkToGoal"
-            description="Create new DependencyLinkToGoal"/>
-        <entries
-            xsi:type="gmfgen:ToolEntry"
-            title="DependencyLinkFromActor"
-            description="Create new DependencyLinkFromActor"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="SecurityObjective"
@@ -474,6 +447,12 @@
             title="AttackMethod"
             description="Create new AttackMethod"
             genNodes="//@diagram/@topLevelNodes.0"/>
+        <entries
+            xsi:type="gmfgen:Separator"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Actor"
+            description="Create new Actor"/>
       </groups>
     </palette>
     <preferencePages

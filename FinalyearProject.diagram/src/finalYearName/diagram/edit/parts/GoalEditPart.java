@@ -1,8 +1,6 @@
 package finalYearName.diagram.edit.parts;
 
-import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
@@ -16,6 +14,7 @@ import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
@@ -185,12 +184,14 @@ public class GoalEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class GoalFigure extends RectangleFigure {
+	public class GoalFigure extends RoundedRectangle {
 
 		/**
 		 * @generated
 		 */
 		public GoalFigure() {
+			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8),
+					getMapMode().DPtoLP(8)));
 			createContents();
 		}
 
@@ -199,13 +200,11 @@ public class GoalEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			RoundedRectangle gOAL0 = new RoundedRectangle();
+			WrappingLabel a0 = new WrappingLabel();
 
-			gOAL0.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8),
-					getMapMode().DPtoLP(8)));
-			gOAL0.setBackgroundColor(ColorConstants.lightBlue);
+			a0.setText("aggelos");
 
-			this.add(gOAL0);
+			this.add(a0);
 
 		}
 
