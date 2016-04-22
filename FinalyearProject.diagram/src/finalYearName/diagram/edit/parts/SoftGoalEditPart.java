@@ -1,9 +1,11 @@
 package finalYearName.diagram.edit.parts;
 
+import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
+import org.eclipse.draw2d.ScalablePolygonShape;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
@@ -13,9 +15,11 @@ import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -88,14 +92,14 @@ public class SoftGoalEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure createNodeShape() {
-		return primaryShape = new RectangleFigure();
+		return primaryShape = new SoftGoalFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public RectangleFigure getPrimaryShape() {
-		return (RectangleFigure) primaryShape;
+	public SoftGoalFigure getPrimaryShape() {
+		return (SoftGoalFigure) primaryShape;
 	}
 
 	/**
@@ -178,5 +182,70 @@ public class SoftGoalEditPart extends ShapeNodeEditPart {
 			((Shape) primaryShape).setLineStyle(style);
 		}
 	}
+
+	/**
+	 * @generated
+	 */
+	public class SoftGoalFigure extends ScalablePolygonShape {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureSoftGoalFigureLabel;
+
+		/**
+		 * @generated
+		 */
+		public SoftGoalFigure() {
+			this.setLayoutManager(new CenterLayout());
+			this.addPoint(new Point(getMapMode().DPtoLP(0), getMapMode()
+					.DPtoLP(30)));
+			this.addPoint(new Point(getMapMode().DPtoLP(10), getMapMode()
+					.DPtoLP(60)));
+			this.addPoint(new Point(getMapMode().DPtoLP(20), getMapMode()
+					.DPtoLP(40)));
+			this.addPoint(new Point(getMapMode().DPtoLP(30), getMapMode()
+					.DPtoLP(60)));
+			this.addPoint(new Point(getMapMode().DPtoLP(40), getMapMode()
+					.DPtoLP(30)));
+			this.addPoint(new Point(getMapMode().DPtoLP(30), getMapMode()
+					.DPtoLP(0)));
+			this.addPoint(new Point(getMapMode().DPtoLP(20), getMapMode()
+					.DPtoLP(20)));
+			this.addPoint(new Point(getMapMode().DPtoLP(10), getMapMode()
+					.DPtoLP(0)));
+			this.setFill(true);
+			this.setForegroundColor(ColorConstants.black);
+			this.setBackgroundColor(THIS_BACK);
+			createContents();
+		}
+
+		/**
+		 * @generated
+		 */
+		private void createContents() {
+
+			fFigureSoftGoalFigureLabel = new WrappingLabel();
+
+			fFigureSoftGoalFigureLabel.setText("   SOFT GOAL");
+
+			this.add(fFigureSoftGoalFigureLabel);
+			fFigureSoftGoalFigureLabel.setLayoutManager(new CenterLayout());
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureSoftGoalFigureLabel() {
+			return fFigureSoftGoalFigureLabel;
+		}
+
+	}
+
+	/**
+	 * @generated
+	 */
+	static final Color THIS_BACK = new Color(null, 0, 255, 255);
 
 }

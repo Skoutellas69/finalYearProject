@@ -9,164 +9,535 @@
       name="Default">
     <figures
         xsi:type="gmfgraph:PolylineDecoration"
-        name="DependencyLinkToGoalTargetDecoration"/>
+        name="DependencyLinkToSecurityObjectiveTargetDecoration"/>
     <figures
         xsi:type="gmfgraph:PolylineDecoration"
-        name="DependencyLinkFromActorTargetDecoration"/>
+        name="DependencyLinkToSecurityConstraintTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="DependencyLinkToAttackMethodTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="DependencyLinkToVulnerabilityTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="DependencyLinkToAttackerTargetDecoration"/>
+    <figures
+        xsi:type="gmfgraph:PolylineDecoration"
+        name="DependencyLinkToResourceTargetDecoration"/>
     <descriptors
         name="ActorFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="ActorFigure">
+          xsi:type="gmfgraph:Ellipse"
+          name="ellipseFigure">
         <layout
-            xsi:type="gmfgraph:XYLayout"/>
-        <backgroundColor
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
             xsi:type="gmfgraph:ConstantColor"
-            value="darkGray"/>
-        <font
-            xsi:type="gmfgraph:BasicFont"
-            faceName="ACTOR"/>
+            value="black"/>
+        <backgroundColor
+            xsi:type="gmfgraph:RGBColor"
+            red="153"
+            green="51"
+            blue="255"/>
         <children
-            xsi:type="gmfgraph:RoundedRectangle"
-            name="RoundedRectangleFigure"/>
+            xsi:type="gmfgraph:Label"
+            name="actorFigureLabel"
+            text="    ACTOR">
+          <layout
+              xsi:type="gmfgraph:CenterLayout"/>
+          <foregroundColor
+              xsi:type="gmfgraph:ConstantColor"
+              value="black"/>
+        </children>
       </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="GoalFigure">
       <actualFigure
-          xsi:type="gmfgraph:RoundedRectangle">
+          xsi:type="gmfgraph:RoundedRectangle"
+          name="goalFigure">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="lightBlue"/>
         <children
             xsi:type="gmfgraph:Label"
-            name="a"
-            text="aggelos"/>
+            name="goalFigureLabel"
+            text="      GOAL">
+          <layout
+              xsi:type="gmfgraph:CenterLayout"/>
+        </children>
       </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="DependencyLinkFigure">
       <actualFigure
           xsi:type="gmfgraph:PolylineConnection"
-          name="DependencyLinkFigure"/>
+          name="DependencyLinkFigure">
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="darkGray"/>
+      </actualFigure>
     </descriptors>
     <descriptors
         name="DependencyLinkToGoalFigure">
       <actualFigure
           xsi:type="gmfgraph:PolylineConnection"
-          name="DependencyLinkToGoalFigure"
-          targetDecoration="//@figures.0/@figures.0"/>
+          name="DependencyLinkToGoalFigure"/>
     </descriptors>
     <descriptors
         name="DependencyLinkFromActorFigure">
       <actualFigure
           xsi:type="gmfgraph:PolylineConnection"
-          name="DependencyLinkFromActorFigure"
-          targetDecoration="//@figures.0/@figures.1"/>
+          name="DependencyLinkFromActorFigure"/>
     </descriptors>
     <descriptors
         name="SecurityObjectiveFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="SecurityObjectiveFigure">
+          xsi:type="gmfgraph:ScalablePolygon">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="red"/>
         <children
-            xsi:type="gmfgraph:ScalablePolygon">
-          <backgroundColor
-              xsi:type="gmfgraph:ConstantColor"
-              value="blue"/>
+            xsi:type="gmfgraph:Label"
+            name="securityObjectiveFigureLabel"
+            text="    SECURITY OBJECTIVE">
+          <layout
+              xsi:type="gmfgraph:BorderLayout"/>
         </children>
+        <template
+            y="10"/>
+        <template
+            x="10"/>
+        <template
+            x="20"/>
+        <template
+            x="30"
+            y="10"/>
+        <template
+            x="30"
+            y="20"/>
+        <template
+            x="20"
+            y="30"/>
+        <template
+            x="10"
+            y="30"/>
+        <template
+            y="20"/>
       </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="ThreatFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="ThreatFigure">
+          xsi:type="gmfgraph:ScalablePolygon">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
         <backgroundColor
             xsi:type="gmfgraph:ConstantColor"
-            value="green"/>
+            value="lightGray"/>
         <children
-            xsi:type="gmfgraph:Ellipse"
-            name="THREAT"/>
+            xsi:type="gmfgraph:Label"
+            name="threatFigureLabel"
+            text="     THREAT">
+          <layout
+              xsi:type="gmfgraph:CenterLayout"/>
+        </children>
+        <template
+            x="10"/>
+        <template
+            y="20"/>
+        <template
+            x="30"
+            y="40"/>
+        <template
+            x="60"
+            y="20"/>
+        <template
+            x="50"/>
       </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="SecurityConstraintFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="SecurityConstraintFigure">
+          xsi:type="gmfgraph:ScalablePolygon">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
+        <backgroundColor
+            xsi:type="gmfgraph:RGBColor"
+            red="255"
+            blue="127"/>
         <children
-            xsi:type="gmfgraph:ScalablePolygon"
-            name="SecurityConstraint"/>
+            xsi:type="gmfgraph:Label"
+            name="securityConstraintLabel"
+            text="    SECURITY CONSTRAINT">
+          <layout
+              xsi:type="gmfgraph:FlowLayout"/>
+        </children>
+        <template
+            y="10"/>
+        <template
+            y="30"/>
+        <template
+            x="20"
+            y="40"/>
+        <template
+            x="40"
+            y="30"/>
+        <template
+            x="40"
+            y="10"/>
+        <template
+            x="20"/>
       </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="PlanFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="PlanFigure">
+          xsi:type="gmfgraph:ScalablePolygon">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="yellow"/>
         <children
-            xsi:type="gmfgraph:Polygon"
-            name="PLAN">
-          <backgroundColor
-              xsi:type="gmfgraph:ConstantColor"
-              value="gray"/>
+            xsi:type="gmfgraph:Label"
+            name="planFigureLabel"
+            text="    PLAN">
+          <layout
+              xsi:type="gmfgraph:CenterLayout"/>
         </children>
+        <template
+            y="20"/>
+        <template
+            x="20"
+            y="40"/>
+        <template
+            x="40"
+            y="40"/>
+        <template
+            x="60"
+            y="20"/>
+        <template
+            x="40"/>
+        <template
+            x="20"/>
       </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="SecurityMechanismFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="SecurityMechanismFigure"/>
+          xsi:type="gmfgraph:ScalablePolygon">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <backgroundColor
+            xsi:type="gmfgraph:RGBColor"
+            red="164"
+            green="20"
+            blue="20"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="securityMechanismLabel"
+            text="    SECURITY MECHANISM">
+          <layout
+              xsi:type="gmfgraph:BorderLayout"/>
+        </children>
+        <template
+            y="20"/>
+        <template
+            x="20"
+            y="40"/>
+        <template
+            x="60"
+            y="40"/>
+        <template
+            x="80"
+            y="20"/>
+        <template
+            x="60"/>
+        <template
+            x="20"/>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="OrganisationFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="OrganisationFigure"
-          lineKind="LINE_DASH"/>
+          xsi:type="gmfgraph:RoundedRectangle"
+          lineKind="LINE_DOT">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
+        <backgroundColor
+            xsi:type="gmfgraph:RGBColor"
+            red="255"
+            green="255"
+            blue="204"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="organisationFigureLabel"
+            text="     ORGANISATION">
+          <layout
+              xsi:type="gmfgraph:CenterLayout"/>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="SoftGoalFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="SoftGoalFigure"/>
+          xsi:type="gmfgraph:ScalablePolygon">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
+        <backgroundColor
+            xsi:type="gmfgraph:RGBColor"
+            green="255"
+            blue="255"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="softGoalFigureLabel"
+            text="   SOFT GOAL">
+          <layout
+              xsi:type="gmfgraph:CenterLayout"/>
+        </children>
+        <template
+            y="30"/>
+        <template
+            x="10"
+            y="60"/>
+        <template
+            x="20"
+            y="40"/>
+        <template
+            x="30"
+            y="60"/>
+        <template
+            x="40"
+            y="30"/>
+        <template
+            x="30"/>
+        <template
+            x="20"
+            y="20"/>
+        <template
+            x="10"/>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="ResourceFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="ResourceFigure"/>
+          xsi:type="gmfgraph:ScalablePolygon">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <backgroundColor
+            xsi:type="gmfgraph:RGBColor"
+            red="64"
+            green="64"
+            blue="64"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="resourceFigureLabel"
+            text="     RESOURCE"/>
+        <template/>
+        <template
+            y="20"/>
+        <template
+            x="20"
+            y="30"/>
+        <template
+            x="30"
+            y="30"/>
+        <template
+            x="50"
+            y="20"/>
+        <template
+            x="50"/>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="AttackerFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="AttackerFigure">
+          xsi:type="gmfgraph:RoundedRectangle">
+        <layout
+            xsi:type="gmfgraph:FlowLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="darkGreen"/>
         <children
-            xsi:type="gmfgraph:Polygon"/>
+            xsi:type="gmfgraph:Label"
+            name="attackerFigureLabel"
+            text="    ATTACKER">
+          <layout
+              xsi:type="gmfgraph:CenterLayout"/>
+        </children>
       </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.13/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="VulnerabilityFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="VulnerabilityFigure"/>
+          xsi:type="gmfgraph:Ellipse">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="black"/>
+        <backgroundColor
+            xsi:type="gmfgraph:RGBColor"
+            red="153"
+            green="255"
+            blue="153"/>
+        <children
+            xsi:type="gmfgraph:Label"
+            name="vulnerabilityFigureLabel"
+            text="     VULNERABILITY">
+          <layout
+              xsi:type="gmfgraph:CenterLayout"/>
+        </children>
+      </actualFigure>
+      <accessors
+          figure="//@figures.0/@descriptors.14/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors
         name="AttackMethodFigure">
       <actualFigure
-          xsi:type="gmfgraph:Rectangle"
-          name="AttackMethodFigure"/>
-    </descriptors>
-    <descriptors
-        name="Polygon">
-      <actualFigure
-          xsi:type="gmfgraph:Polygon"
-          name="Polygon">
+          xsi:type="gmfgraph:ScalablePolygon">
+        <layout
+            xsi:type="gmfgraph:CenterLayout"/>
+        <foregroundColor
+            xsi:type="gmfgraph:ConstantColor"/>
+        <backgroundColor
+            xsi:type="gmfgraph:ConstantColor"
+            value="darkBlue"/>
         <children
-            xsi:type="gmfgraph:CustomFigure"/>
+            xsi:type="gmfgraph:Label"
+            name="attackMethodFigureLabel"
+            text="    ATTACK METHOD">
+          <layout
+              xsi:type="gmfgraph:CenterLayout"/>
+        </children>
+        <template
+            x="20"
+            y="10"/>
+        <template
+            x="10"
+            y="20"/>
+        <template
+            y="30"/>
+        <template
+            y="40"/>
+        <template
+            x="10"
+            y="50"/>
+        <template
+            x="20"
+            y="60"/>
+        <template
+            x="30"
+            y="50"/>
+        <template
+            x="40"
+            y="40"/>
+        <template
+            x="40"
+            y="30"/>
+        <template
+            x="30"
+            y="20"/>
       </actualFigure>
       <accessors
-          accessor="getFigurePolygon"/>
+          figure="//@figures.0/@descriptors.15/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors
+        name="DependencyLinkToSecurityObjectiveFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="DependencyLinkToSecurityObjectiveFigure"
+          targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors
+        name="DependencyLinkToSecurityConstraintFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="DependencyLinkToSecurityConstraintFigure"
+          targetDecoration="//@figures.0/@figures.1"/>
+    </descriptors>
+    <descriptors
+        name="DependencyLinkToAttackMethodFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="DependencyLinkToAttackMethodFigure"
+          targetDecoration="//@figures.0/@figures.2"/>
+    </descriptors>
+    <descriptors
+        name="DependencyLinkToVulnerabilityFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="DependencyLinkToVulnerabilityFigure"
+          targetDecoration="//@figures.0/@figures.3"/>
+    </descriptors>
+    <descriptors
+        name="DependencyLinkToAttackerFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="DependencyLinkToAttackerFigure"
+          targetDecoration="//@figures.0/@figures.4"/>
+    </descriptors>
+    <descriptors
+        name="DependencyLinkToResourceFigure">
+      <actualFigure
+          xsi:type="gmfgraph:PolylineConnection"
+          name="DependencyLinkToResourceFigure"
+          targetDecoration="//@figures.0/@figures.5"/>
     </descriptors>
   </figures>
   <nodes
@@ -217,4 +588,22 @@
   <connections
       name="DependencyLinkFromActor"
       figure="DependencyLinkFromActorFigure"/>
+  <connections
+      name="DependencyLinkToSecurityObjective"
+      figure="DependencyLinkToSecurityObjectiveFigure"/>
+  <connections
+      name="DependencyLinkToSecurityConstraint"
+      figure="DependencyLinkToSecurityConstraintFigure"/>
+  <connections
+      name="DependencyLinkToAttackMethod"
+      figure="DependencyLinkToAttackMethodFigure"/>
+  <connections
+      name="DependencyLinkToVulnerability"
+      figure="DependencyLinkToVulnerabilityFigure"/>
+  <connections
+      name="DependencyLinkToAttacker"
+      figure="DependencyLinkToAttackerFigure"/>
+  <connections
+      name="DependencyLinkToResource"
+      figure="DependencyLinkToResourceFigure"/>
 </gmfgraph:Canvas>

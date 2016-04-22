@@ -1,22 +1,25 @@
 package finalYearName.diagram.edit.parts;
 
+import org.eclipse.draw2d.ColorConstants;
+import org.eclipse.draw2d.FlowLayout;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.PolygonShape;
-import org.eclipse.draw2d.RectangleFigure;
+import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
-import org.eclipse.gef.Request;
 import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
-import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.diagram.ui.editpolicies.FlowLayoutEditPolicy;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -63,18 +66,15 @@ public class AttackerEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected LayoutEditPolicy createLayoutEditPolicy() {
-		org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy() {
 
-			protected EditPolicy createChildEditPolicy(EditPart child) {
-				EditPolicy result = child
-						.getEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE);
-				if (result == null) {
-					result = new NonResizableEditPolicy();
-				}
-				return result;
+		FlowLayoutEditPolicy lep = new FlowLayoutEditPolicy() {
+
+			protected Command createAddCommand(EditPart child, EditPart after) {
+				return null;
 			}
 
-			protected Command getMoveChildrenCommand(Request request) {
+			protected Command createMoveChildCommand(EditPart child,
+					EditPart after) {
 				return null;
 			}
 
@@ -183,12 +183,33 @@ public class AttackerEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class AttackerFigure extends RectangleFigure {
+	public class AttackerFigure extends RoundedRectangle {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureAttackerFigureLabel;
 
 		/**
 		 * @generated
 		 */
 		public AttackerFigure() {
+
+			FlowLayout layoutThis = new FlowLayout();
+			layoutThis.setStretchMinorAxis(false);
+			layoutThis.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutThis.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutThis.setMajorSpacing(5);
+			layoutThis.setMinorSpacing(5);
+			layoutThis.setHorizontal(true);
+
+			this.setLayoutManager(layoutThis);
+
+			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8),
+					getMapMode().DPtoLP(8)));
+			this.setForegroundColor(ColorConstants.black);
+			this.setBackgroundColor(ColorConstants.darkGreen);
 			createContents();
 		}
 
@@ -197,12 +218,20 @@ public class AttackerEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			PolygonShape polyline0 = new PolygonShape();
+			fFigureAttackerFigureLabel = new WrappingLabel();
 
-			polyline0.setFill(true);
+			fFigureAttackerFigureLabel.setText("    ATTACKER");
 
-			this.add(polyline0);
+			this.add(fFigureAttackerFigureLabel);
+			fFigureAttackerFigureLabel.setLayoutManager(new CenterLayout());
 
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureAttackerFigureLabel() {
+			return fFigureAttackerFigureLabel;
 		}
 
 	}

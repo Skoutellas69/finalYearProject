@@ -1,10 +1,12 @@
 package finalYearName.diagram.edit.parts;
 
+import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.Graphics;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
+import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
@@ -14,9 +16,11 @@ import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -183,15 +187,52 @@ public class OrganisationEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class OrganisationFigure extends RectangleFigure {
+	public class OrganisationFigure extends RoundedRectangle {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureOrganisationFigureLabel;
 
 		/**
 		 * @generated
 		 */
 		public OrganisationFigure() {
-			this.setLineStyle(Graphics.LINE_DASH);
+			this.setLayoutManager(new CenterLayout());
+			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8),
+					getMapMode().DPtoLP(8)));
+			this.setLineStyle(Graphics.LINE_DOT);
+			this.setForegroundColor(ColorConstants.black);
+			this.setBackgroundColor(THIS_BACK);
+			createContents();
+		}
+
+		/**
+		 * @generated
+		 */
+		private void createContents() {
+
+			fFigureOrganisationFigureLabel = new WrappingLabel();
+
+			fFigureOrganisationFigureLabel.setText("     ORGANISATION");
+
+			this.add(fFigureOrganisationFigureLabel);
+			fFigureOrganisationFigureLabel.setLayoutManager(new CenterLayout());
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureOrganisationFigureLabel() {
+			return fFigureOrganisationFigureLabel;
 		}
 
 	}
+
+	/**
+	 * @generated
+	 */
+	static final Color THIS_BACK = new Color(null, 255, 255, 204);
 
 }

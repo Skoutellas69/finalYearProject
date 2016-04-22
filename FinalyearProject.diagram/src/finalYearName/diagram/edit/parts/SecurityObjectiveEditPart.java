@@ -1,11 +1,12 @@
 package finalYearName.diagram.edit.parts;
 
+import org.eclipse.draw2d.BorderLayout;
 import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.ScalablePolygonShape;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
@@ -15,9 +16,11 @@ import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -184,12 +187,37 @@ public class SecurityObjectiveEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class SecurityObjectiveFigure extends RectangleFigure {
+	public class SecurityObjectiveFigure extends ScalablePolygonShape {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureSecurityObjectiveFigureLabel;
 
 		/**
 		 * @generated
 		 */
 		public SecurityObjectiveFigure() {
+			this.setLayoutManager(new CenterLayout());
+			this.addPoint(new Point(getMapMode().DPtoLP(0), getMapMode()
+					.DPtoLP(10)));
+			this.addPoint(new Point(getMapMode().DPtoLP(10), getMapMode()
+					.DPtoLP(0)));
+			this.addPoint(new Point(getMapMode().DPtoLP(20), getMapMode()
+					.DPtoLP(0)));
+			this.addPoint(new Point(getMapMode().DPtoLP(30), getMapMode()
+					.DPtoLP(10)));
+			this.addPoint(new Point(getMapMode().DPtoLP(30), getMapMode()
+					.DPtoLP(20)));
+			this.addPoint(new Point(getMapMode().DPtoLP(20), getMapMode()
+					.DPtoLP(30)));
+			this.addPoint(new Point(getMapMode().DPtoLP(10), getMapMode()
+					.DPtoLP(30)));
+			this.addPoint(new Point(getMapMode().DPtoLP(0), getMapMode()
+					.DPtoLP(20)));
+			this.setFill(true);
+			this.setForegroundColor(ColorConstants.white);
+			this.setBackgroundColor(ColorConstants.red);
 			createContents();
 		}
 
@@ -198,13 +226,24 @@ public class SecurityObjectiveEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			ScalablePolygonShape polyline0 = new ScalablePolygonShape();
+			fFigureSecurityObjectiveFigureLabel = new WrappingLabel();
 
-			polyline0.setFill(true);
-			polyline0.setBackgroundColor(ColorConstants.blue);
+			fFigureSecurityObjectiveFigureLabel
+					.setText("    SECURITY OBJECTIVE");
 
-			this.add(polyline0);
+			this.add(fFigureSecurityObjectiveFigureLabel);
 
+			BorderLayout layoutFFigureSecurityObjectiveFigureLabel = new BorderLayout();
+			fFigureSecurityObjectiveFigureLabel
+					.setLayoutManager(layoutFFigureSecurityObjectiveFigureLabel);
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureSecurityObjectiveFigureLabel() {
+			return fFigureSecurityObjectiveFigureLabel;
 		}
 
 	}

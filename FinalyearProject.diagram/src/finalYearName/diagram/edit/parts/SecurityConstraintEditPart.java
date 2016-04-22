@@ -1,10 +1,12 @@
 package finalYearName.diagram.edit.parts;
 
+import org.eclipse.draw2d.ColorConstants;
+import org.eclipse.draw2d.FlowLayout;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.ScalablePolygonShape;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
@@ -14,9 +16,11 @@ import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -183,12 +187,33 @@ public class SecurityConstraintEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class SecurityConstraintFigure extends RectangleFigure {
+	public class SecurityConstraintFigure extends ScalablePolygonShape {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureSecurityConstraintLabel;
 
 		/**
 		 * @generated
 		 */
 		public SecurityConstraintFigure() {
+			this.setLayoutManager(new CenterLayout());
+			this.addPoint(new Point(getMapMode().DPtoLP(0), getMapMode()
+					.DPtoLP(10)));
+			this.addPoint(new Point(getMapMode().DPtoLP(0), getMapMode()
+					.DPtoLP(30)));
+			this.addPoint(new Point(getMapMode().DPtoLP(20), getMapMode()
+					.DPtoLP(40)));
+			this.addPoint(new Point(getMapMode().DPtoLP(40), getMapMode()
+					.DPtoLP(30)));
+			this.addPoint(new Point(getMapMode().DPtoLP(40), getMapMode()
+					.DPtoLP(10)));
+			this.addPoint(new Point(getMapMode().DPtoLP(20), getMapMode()
+					.DPtoLP(0)));
+			this.setFill(true);
+			this.setForegroundColor(ColorConstants.black);
+			this.setBackgroundColor(THIS_BACK);
 			createContents();
 		}
 
@@ -197,14 +222,40 @@ public class SecurityConstraintEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			ScalablePolygonShape securityConstraint0 = new ScalablePolygonShape();
+			fFigureSecurityConstraintLabel = new WrappingLabel();
 
-			securityConstraint0.setFill(true);
+			fFigureSecurityConstraintLabel.setText("    SECURITY CONSTRAINT");
 
-			this.add(securityConstraint0);
+			this.add(fFigureSecurityConstraintLabel);
+
+			FlowLayout layoutFFigureSecurityConstraintLabel = new FlowLayout();
+			layoutFFigureSecurityConstraintLabel.setStretchMinorAxis(false);
+			layoutFFigureSecurityConstraintLabel
+					.setMinorAlignment(FlowLayout.ALIGN_LEFTTOP);
+
+			layoutFFigureSecurityConstraintLabel
+					.setMajorAlignment(FlowLayout.ALIGN_LEFTTOP);
+			layoutFFigureSecurityConstraintLabel.setMajorSpacing(5);
+			layoutFFigureSecurityConstraintLabel.setMinorSpacing(5);
+			layoutFFigureSecurityConstraintLabel.setHorizontal(true);
+
+			fFigureSecurityConstraintLabel
+					.setLayoutManager(layoutFFigureSecurityConstraintLabel);
 
 		}
 
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureSecurityConstraintLabel() {
+			return fFigureSecurityConstraintLabel;
+		}
+
 	}
+
+	/**
+	 * @generated
+	 */
+	static final Color THIS_BACK = new Color(null, 255, 0, 127);
 
 }

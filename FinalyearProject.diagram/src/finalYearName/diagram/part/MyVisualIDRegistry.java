@@ -119,22 +119,26 @@ public class MyVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case finalYearName.diagram.edit.parts.ModelEditPart.VISUAL_ID:
-			if (finalYearName.FinalYearNamePackage.eINSTANCE.getAttackMethod()
+			if (finalYearName.FinalYearNamePackage.eINSTANCE.getSoftGoal()
 					.isSuperTypeOf(domainElement.eClass())) {
-				return finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID;
+				return finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID;
+			}
+			if (finalYearName.FinalYearNamePackage.eINSTANCE
+					.getSecurityMechanism().isSuperTypeOf(
+							domainElement.eClass())) {
+				return finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID;
 			}
 			if (finalYearName.FinalYearNamePackage.eINSTANCE.getOrganisation()
 					.isSuperTypeOf(domainElement.eClass())) {
 				return finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID;
 			}
-			if (finalYearName.FinalYearNamePackage.eINSTANCE
-					.getSecurityObjective().isSuperTypeOf(
-							domainElement.eClass())) {
-				return finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID;
-			}
 			if (finalYearName.FinalYearNamePackage.eINSTANCE.getActor()
 					.isSuperTypeOf(domainElement.eClass())) {
 				return finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID;
+			}
+			if (finalYearName.FinalYearNamePackage.eINSTANCE.getAttackMethod()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID;
 			}
 			if (finalYearName.FinalYearNamePackage.eINSTANCE.getPlan()
 					.isSuperTypeOf(domainElement.eClass())) {
@@ -143,23 +147,6 @@ public class MyVisualIDRegistry {
 			if (finalYearName.FinalYearNamePackage.eINSTANCE.getThreat()
 					.isSuperTypeOf(domainElement.eClass())) {
 				return finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID;
-			}
-			if (finalYearName.FinalYearNamePackage.eINSTANCE.getAttacker()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID;
-			}
-			if (finalYearName.FinalYearNamePackage.eINSTANCE.getResource()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID;
-			}
-			if (finalYearName.FinalYearNamePackage.eINSTANCE.getGoal()
-					.isSuperTypeOf(domainElement.eClass())) {
-				return finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID;
-			}
-			if (finalYearName.FinalYearNamePackage.eINSTANCE
-					.getSecurityMechanism().isSuperTypeOf(
-							domainElement.eClass())) {
-				return finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID;
 			}
 			if (finalYearName.FinalYearNamePackage.eINSTANCE
 					.getSecurityConstraint().isSuperTypeOf(
@@ -170,9 +157,22 @@ public class MyVisualIDRegistry {
 					.isSuperTypeOf(domainElement.eClass())) {
 				return finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID;
 			}
-			if (finalYearName.FinalYearNamePackage.eINSTANCE.getSoftGoal()
+			if (finalYearName.FinalYearNamePackage.eINSTANCE
+					.getSecurityObjective().isSuperTypeOf(
+							domainElement.eClass())) {
+				return finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID;
+			}
+			if (finalYearName.FinalYearNamePackage.eINSTANCE.getGoal()
 					.isSuperTypeOf(domainElement.eClass())) {
-				return finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID;
+				return finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID;
+			}
+			if (finalYearName.FinalYearNamePackage.eINSTANCE.getResource()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID;
+			}
+			if (finalYearName.FinalYearNamePackage.eINSTANCE.getAttacker()
+					.isSuperTypeOf(domainElement.eClass())) {
+				return finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID;
 			}
 			break;
 		}
@@ -203,16 +203,19 @@ public class MyVisualIDRegistry {
 		}
 		switch (containerVisualID) {
 		case finalYearName.diagram.edit.parts.ModelEditPart.VISUAL_ID:
-			if (finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID == nodeVisualID) {
+			if (finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID == nodeVisualID) {
+			if (finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID == nodeVisualID) {
+			if (finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID == nodeVisualID) {
@@ -221,25 +224,22 @@ public class MyVisualIDRegistry {
 			if (finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
-			if (finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID == nodeVisualID) {
-				return true;
-			}
 			if (finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			if (finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
-			if (finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID == nodeVisualID) {
+			if (finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;

@@ -38,6 +38,18 @@
         eType="#//Goal"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="fromActor" upperBound="-1"
         eType="#//Actor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toSecurityObjective" upperBound="-1"
+        eType="#//SecurityObjective"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toSecurityConstraint" upperBound="-1"
+        eType="#//SecurityConstraint"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toAttackMethod" upperBound="-1"
+        eType="#//AttackMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toVulnerability" upperBound="-1"
+        eType="#//Vulnerability"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toAttacker" upperBound="-1"
+        eType="#//Attacker"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="toResource" upperBound="-1"
+        eType="#//Resource"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SecurityObjective"/>
   <eClassifiers xsi:type="ecore:EClass" name="Threat"/>

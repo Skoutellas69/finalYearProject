@@ -2,10 +2,10 @@ package finalYearName.diagram.edit.parts;
 
 import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.PolygonShape;
-import org.eclipse.draw2d.RectangleFigure;
+import org.eclipse.draw2d.ScalablePolygonShape;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
@@ -15,9 +15,11 @@ import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -184,12 +186,33 @@ public class PlanEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class PlanFigure extends RectangleFigure {
+	public class PlanFigure extends ScalablePolygonShape {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigurePlanFigureLabel;
 
 		/**
 		 * @generated
 		 */
 		public PlanFigure() {
+			this.setLayoutManager(new CenterLayout());
+			this.addPoint(new Point(getMapMode().DPtoLP(0), getMapMode()
+					.DPtoLP(20)));
+			this.addPoint(new Point(getMapMode().DPtoLP(20), getMapMode()
+					.DPtoLP(40)));
+			this.addPoint(new Point(getMapMode().DPtoLP(40), getMapMode()
+					.DPtoLP(40)));
+			this.addPoint(new Point(getMapMode().DPtoLP(60), getMapMode()
+					.DPtoLP(20)));
+			this.addPoint(new Point(getMapMode().DPtoLP(40), getMapMode()
+					.DPtoLP(0)));
+			this.addPoint(new Point(getMapMode().DPtoLP(20), getMapMode()
+					.DPtoLP(0)));
+			this.setFill(true);
+			this.setForegroundColor(ColorConstants.black);
+			this.setBackgroundColor(ColorConstants.yellow);
 			createContents();
 		}
 
@@ -198,13 +221,20 @@ public class PlanEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			PolygonShape pLAN0 = new PolygonShape();
+			fFigurePlanFigureLabel = new WrappingLabel();
 
-			pLAN0.setFill(true);
-			pLAN0.setBackgroundColor(ColorConstants.gray);
+			fFigurePlanFigureLabel.setText("    PLAN");
 
-			this.add(pLAN0);
+			this.add(fFigurePlanFigureLabel);
+			fFigurePlanFigureLabel.setLayoutManager(new CenterLayout());
 
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigurePlanFigureLabel() {
+			return fFigurePlanFigureLabel;
 		}
 
 	}

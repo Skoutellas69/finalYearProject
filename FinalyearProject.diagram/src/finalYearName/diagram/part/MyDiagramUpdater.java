@@ -41,13 +41,25 @@ public class MyDiagramUpdater {
 		finalYearName.Model modelElement = (finalYearName.Model) view
 				.getElement();
 		LinkedList<finalYearName.diagram.part.MyNodeDescriptor> result = new LinkedList<finalYearName.diagram.part.MyNodeDescriptor>();
-		for (Iterator<?> it = modelElement.getHasAttackMethod().iterator(); it
+		for (Iterator<?> it = modelElement.getHasSoftGoal().iterator(); it
 				.hasNext();) {
-			finalYearName.AttackMethod childElement = (finalYearName.AttackMethod) it
+			finalYearName.SoftGoal childElement = (finalYearName.SoftGoal) it
 					.next();
 			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
 					.getNodeVisualID(view, childElement);
-			if (visualID == finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID) {
+			if (visualID == finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID) {
+				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getHasSecurityMechanism().iterator(); it
+				.hasNext();) {
+			finalYearName.SecurityMechanism childElement = (finalYearName.SecurityMechanism) it
+					.next();
+			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID) {
 				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
 						childElement, visualID));
 				continue;
@@ -65,24 +77,24 @@ public class MyDiagramUpdater {
 				continue;
 			}
 		}
-		for (Iterator<?> it = modelElement.getHasSecurityObjective().iterator(); it
-				.hasNext();) {
-			finalYearName.SecurityObjective childElement = (finalYearName.SecurityObjective) it
-					.next();
-			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID) {
-				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
 		for (Iterator<?> it = modelElement.getHasActor().iterator(); it
 				.hasNext();) {
 			finalYearName.Actor childElement = (finalYearName.Actor) it.next();
 			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
 					.getNodeVisualID(view, childElement);
 			if (visualID == finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID) {
+				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getHasAttackMethod().iterator(); it
+				.hasNext();) {
+			finalYearName.AttackMethod childElement = (finalYearName.AttackMethod) it
+					.next();
+			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID) {
 				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
 						childElement, visualID));
 				continue;
@@ -106,53 +118,6 @@ public class MyDiagramUpdater {
 			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
 					.getNodeVisualID(view, childElement);
 			if (visualID == finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID) {
-				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		for (Iterator<?> it = modelElement.getHasAttacker().iterator(); it
-				.hasNext();) {
-			finalYearName.Attacker childElement = (finalYearName.Attacker) it
-					.next();
-			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID) {
-				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		for (Iterator<?> it = modelElement.getHasResource().iterator(); it
-				.hasNext();) {
-			finalYearName.Resource childElement = (finalYearName.Resource) it
-					.next();
-			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID) {
-				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		for (Iterator<?> it = modelElement.getHasGoal().iterator(); it
-				.hasNext();) {
-			finalYearName.Goal childElement = (finalYearName.Goal) it.next();
-			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID) {
-				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
-						childElement, visualID));
-				continue;
-			}
-		}
-		for (Iterator<?> it = modelElement.getHasSecurityMechanism().iterator(); it
-				.hasNext();) {
-			finalYearName.SecurityMechanism childElement = (finalYearName.SecurityMechanism) it
-					.next();
-			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
-					.getNodeVisualID(view, childElement);
-			if (visualID == finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID) {
 				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
 						childElement, visualID));
 				continue;
@@ -182,13 +147,48 @@ public class MyDiagramUpdater {
 				continue;
 			}
 		}
-		for (Iterator<?> it = modelElement.getHasSoftGoal().iterator(); it
+		for (Iterator<?> it = modelElement.getHasSecurityObjective().iterator(); it
 				.hasNext();) {
-			finalYearName.SoftGoal childElement = (finalYearName.SoftGoal) it
+			finalYearName.SecurityObjective childElement = (finalYearName.SecurityObjective) it
 					.next();
 			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
 					.getNodeVisualID(view, childElement);
-			if (visualID == finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID) {
+			if (visualID == finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID) {
+				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getHasGoal().iterator(); it
+				.hasNext();) {
+			finalYearName.Goal childElement = (finalYearName.Goal) it.next();
+			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID) {
+				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getHasResource().iterator(); it
+				.hasNext();) {
+			finalYearName.Resource childElement = (finalYearName.Resource) it
+					.next();
+			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID) {
+				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
+						childElement, visualID));
+				continue;
+			}
+		}
+		for (Iterator<?> it = modelElement.getHasAttacker().iterator(); it
+				.hasNext();) {
+			finalYearName.Attacker childElement = (finalYearName.Attacker) it
+					.next();
+			int visualID = finalYearName.diagram.part.MyVisualIDRegistry
+					.getNodeVisualID(view, childElement);
+			if (visualID == finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID) {
 				result.add(new finalYearName.diagram.part.MyNodeDescriptor(
 						childElement, visualID));
 				continue;
@@ -205,32 +205,32 @@ public class MyDiagramUpdater {
 		switch (finalYearName.diagram.part.MyVisualIDRegistry.getVisualID(view)) {
 		case finalYearName.diagram.edit.parts.ModelEditPart.VISUAL_ID:
 			return getModel_1000ContainedLinks(view);
-		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
-			return getAttackMethod_2008ContainedLinks(view);
+		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
+			return getSoftGoal_2013ContainedLinks(view);
+		case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
+			return getSecurityMechanism_2003ContainedLinks(view);
 		case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID:
 			return getOrganisation_2009ContainedLinks(view);
-		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
-			return getSecurityObjective_2007ContainedLinks(view);
 		case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
 			return getActor_2001ContainedLinks(view);
+		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
+			return getAttackMethod_2008ContainedLinks(view);
 		case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
 			return getPlan_2004ContainedLinks(view);
 		case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
 			return getThreat_2005ContainedLinks(view);
-		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
-			return getAttacker_2010ContainedLinks(view);
-		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
-			return getResource_2011ContainedLinks(view);
-		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
-			return getGoal_2002ContainedLinks(view);
-		case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
-			return getSecurityMechanism_2003ContainedLinks(view);
 		case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
 			return getSecurityConstraint_2006ContainedLinks(view);
 		case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID:
 			return getVulnerability_2012ContainedLinks(view);
-		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
-			return getSoftGoal_2013ContainedLinks(view);
+		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
+			return getSecurityObjective_2007ContainedLinks(view);
+		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+			return getGoal_2002ContainedLinks(view);
+		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
+			return getResource_2011ContainedLinks(view);
+		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
+			return getAttacker_2010ContainedLinks(view);
 		case finalYearName.diagram.edit.parts.DependencyLinkEditPart.VISUAL_ID:
 			return getDependencyLink_4001ContainedLinks(view);
 		}
@@ -243,32 +243,32 @@ public class MyDiagramUpdater {
 	public static List<finalYearName.diagram.part.MyLinkDescriptor> getIncomingLinks(
 			View view) {
 		switch (finalYearName.diagram.part.MyVisualIDRegistry.getVisualID(view)) {
-		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
-			return getAttackMethod_2008IncomingLinks(view);
+		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
+			return getSoftGoal_2013IncomingLinks(view);
+		case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
+			return getSecurityMechanism_2003IncomingLinks(view);
 		case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID:
 			return getOrganisation_2009IncomingLinks(view);
-		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
-			return getSecurityObjective_2007IncomingLinks(view);
 		case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
 			return getActor_2001IncomingLinks(view);
+		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
+			return getAttackMethod_2008IncomingLinks(view);
 		case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
 			return getPlan_2004IncomingLinks(view);
 		case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
 			return getThreat_2005IncomingLinks(view);
-		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
-			return getAttacker_2010IncomingLinks(view);
-		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
-			return getResource_2011IncomingLinks(view);
-		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
-			return getGoal_2002IncomingLinks(view);
-		case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
-			return getSecurityMechanism_2003IncomingLinks(view);
 		case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
 			return getSecurityConstraint_2006IncomingLinks(view);
 		case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID:
 			return getVulnerability_2012IncomingLinks(view);
-		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
-			return getSoftGoal_2013IncomingLinks(view);
+		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
+			return getSecurityObjective_2007IncomingLinks(view);
+		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+			return getGoal_2002IncomingLinks(view);
+		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
+			return getResource_2011IncomingLinks(view);
+		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
+			return getAttacker_2010IncomingLinks(view);
 		case finalYearName.diagram.edit.parts.DependencyLinkEditPart.VISUAL_ID:
 			return getDependencyLink_4001IncomingLinks(view);
 		}
@@ -281,32 +281,32 @@ public class MyDiagramUpdater {
 	public static List<finalYearName.diagram.part.MyLinkDescriptor> getOutgoingLinks(
 			View view) {
 		switch (finalYearName.diagram.part.MyVisualIDRegistry.getVisualID(view)) {
-		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
-			return getAttackMethod_2008OutgoingLinks(view);
+		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
+			return getSoftGoal_2013OutgoingLinks(view);
+		case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
+			return getSecurityMechanism_2003OutgoingLinks(view);
 		case finalYearName.diagram.edit.parts.OrganisationEditPart.VISUAL_ID:
 			return getOrganisation_2009OutgoingLinks(view);
-		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
-			return getSecurityObjective_2007OutgoingLinks(view);
 		case finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID:
 			return getActor_2001OutgoingLinks(view);
+		case finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID:
+			return getAttackMethod_2008OutgoingLinks(view);
 		case finalYearName.diagram.edit.parts.PlanEditPart.VISUAL_ID:
 			return getPlan_2004OutgoingLinks(view);
 		case finalYearName.diagram.edit.parts.ThreatEditPart.VISUAL_ID:
 			return getThreat_2005OutgoingLinks(view);
-		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
-			return getAttacker_2010OutgoingLinks(view);
-		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
-			return getResource_2011OutgoingLinks(view);
-		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
-			return getGoal_2002OutgoingLinks(view);
-		case finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID:
-			return getSecurityMechanism_2003OutgoingLinks(view);
 		case finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID:
 			return getSecurityConstraint_2006OutgoingLinks(view);
 		case finalYearName.diagram.edit.parts.VulnerabilityEditPart.VISUAL_ID:
 			return getVulnerability_2012OutgoingLinks(view);
-		case finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID:
-			return getSoftGoal_2013OutgoingLinks(view);
+		case finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID:
+			return getSecurityObjective_2007OutgoingLinks(view);
+		case finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID:
+			return getGoal_2002OutgoingLinks(view);
+		case finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID:
+			return getResource_2011OutgoingLinks(view);
+		case finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID:
+			return getAttacker_2010OutgoingLinks(view);
 		case finalYearName.diagram.edit.parts.DependencyLinkEditPart.VISUAL_ID:
 			return getDependencyLink_4001OutgoingLinks(view);
 		}
@@ -328,7 +328,15 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttackMethod_2008ContainedLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -344,7 +352,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityObjective_2007ContainedLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getActor_2001ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -352,7 +360,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getActor_2001ContainedLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttackMethod_2008ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -376,38 +384,6 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttacker_2010ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getResource_2011ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getGoal_2002ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003ContainedLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
 	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityConstraint_2006ContainedLinks(
 			View view) {
 		return Collections.emptyList();
@@ -424,7 +400,31 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013ContainedLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityObjective_2007ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getGoal_2002ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getResource_2011ContainedLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttacker_2010ContainedLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -440,7 +440,15 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttackMethod_2008IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -456,7 +464,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityObjective_2007IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getActor_2001IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -464,7 +472,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getActor_2001IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttackMethod_2008IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -488,7 +496,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttacker_2010IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityConstraint_2006IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -496,7 +504,15 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getResource_2011IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getVulnerability_2012IncomingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityObjective_2007IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -519,7 +535,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getResource_2011IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -527,23 +543,7 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityConstraint_2006IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getVulnerability_2012IncomingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013IncomingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttacker_2010IncomingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -559,7 +559,15 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttackMethod_2008OutgoingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -568,14 +576,6 @@ public class MyDiagramUpdater {
 	 * @generated
 	 */
 	public static List<finalYearName.diagram.part.MyLinkDescriptor> getOrganisation_2009OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityObjective_2007OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -595,6 +595,14 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttackMethod_2008OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
 	public static List<finalYearName.diagram.part.MyLinkDescriptor> getPlan_2004OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
@@ -604,38 +612,6 @@ public class MyDiagramUpdater {
 	 * @generated
 	 */
 	public static List<finalYearName.diagram.part.MyLinkDescriptor> getThreat_2005OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttacker_2010OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getResource_2011OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getGoal_2002OutgoingLinks(
-			View view) {
-		return Collections.emptyList();
-	}
-
-	/**
-	 * @generated
-	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityMechanism_2003OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}
@@ -659,7 +635,31 @@ public class MyDiagramUpdater {
 	/**
 	 * @generated
 	 */
-	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSoftGoal_2013OutgoingLinks(
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getSecurityObjective_2007OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getGoal_2002OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getResource_2011OutgoingLinks(
+			View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	 * @generated
+	 */
+	public static List<finalYearName.diagram.part.MyLinkDescriptor> getAttacker_2010OutgoingLinks(
 			View view) {
 		return Collections.emptyList();
 	}

@@ -225,7 +225,13 @@ public class MyNavigatorContentProvider implements ICommonContentProvider {
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					finalYearName.diagram.part.MyVisualIDRegistry
-							.getType(finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID));
+							.getType(finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					finalYearName.diagram.part.MyVisualIDRegistry
+							.getType(finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
@@ -237,13 +243,13 @@ public class MyNavigatorContentProvider implements ICommonContentProvider {
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					finalYearName.diagram.part.MyVisualIDRegistry
-							.getType(finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID));
+							.getType(finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					finalYearName.diagram.part.MyVisualIDRegistry
-							.getType(finalYearName.diagram.edit.parts.ActorEditPart.VISUAL_ID));
+							.getType(finalYearName.diagram.edit.parts.AttackMethodEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getChildrenByType(
@@ -261,30 +267,6 @@ public class MyNavigatorContentProvider implements ICommonContentProvider {
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					finalYearName.diagram.part.MyVisualIDRegistry
-							.getType(finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					finalYearName.diagram.part.MyVisualIDRegistry
-							.getType(finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					finalYearName.diagram.part.MyVisualIDRegistry
-							.getType(finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					finalYearName.diagram.part.MyVisualIDRegistry
-							.getType(finalYearName.diagram.edit.parts.SecurityMechanismEditPart.VISUAL_ID));
-			result.addAll(createNavigatorItems(connectedViews, parentElement,
-					false));
-			connectedViews = getChildrenByType(
-					Collections.singleton(sv),
-					finalYearName.diagram.part.MyVisualIDRegistry
 							.getType(finalYearName.diagram.edit.parts.SecurityConstraintEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
@@ -297,7 +279,25 @@ public class MyNavigatorContentProvider implements ICommonContentProvider {
 			connectedViews = getChildrenByType(
 					Collections.singleton(sv),
 					finalYearName.diagram.part.MyVisualIDRegistry
-							.getType(finalYearName.diagram.edit.parts.SoftGoalEditPart.VISUAL_ID));
+							.getType(finalYearName.diagram.edit.parts.SecurityObjectiveEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					finalYearName.diagram.part.MyVisualIDRegistry
+							.getType(finalYearName.diagram.edit.parts.GoalEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					finalYearName.diagram.part.MyVisualIDRegistry
+							.getType(finalYearName.diagram.edit.parts.ResourceEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement,
+					false));
+			connectedViews = getChildrenByType(
+					Collections.singleton(sv),
+					finalYearName.diagram.part.MyVisualIDRegistry
+							.getType(finalYearName.diagram.edit.parts.AttackerEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement,
 					false));
 			connectedViews = getDiagramLinksByType(

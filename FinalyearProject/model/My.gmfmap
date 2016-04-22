@@ -8,15 +8,28 @@
     xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
   <nodes>
     <containmentFeature
-        href="My.ecore#//Model/hasAttackMethod"/>
+        href="My.ecore#//Model/hasSoftGoal"/>
     <ownedChild>
       <domainMetaElement
-          href="My.ecore#//AttackMethod"/>
+          href="My.ecore#//SoftGoal"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.12"/>
+          href="My.gmftool#//@palette/@tools.0/@tools.9"/>
       <diagramNode
-          href="My.gmfgraph#AttackMethod"/>
+          href="My.gmfgraph#SoftGoal"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="My.ecore#//Model/hasSecurityMechanism"/>
+    <ownedChild>
+      <domainMetaElement
+          href="My.ecore#//SecurityMechanism"/>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="My.gmftool#//@palette/@tools.0/@tools.7"/>
+      <diagramNode
+          href="My.gmfgraph#SecurityMechanism"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -27,22 +40,9 @@
           href="My.ecore#//Organisation"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.7"/>
+          href="My.gmftool#//@palette/@tools.0/@tools.8"/>
       <diagramNode
           href="My.gmfgraph#Organisation"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="My.ecore#//Model/hasSecurityObjective"/>
-    <ownedChild>
-      <domainMetaElement
-          href="My.ecore#//SecurityObjective"/>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.2"/>
-      <diagramNode
-          href="My.gmfgraph#SecurityObjective"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -53,9 +53,22 @@
           href="My.ecore#//Actor"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.14"/>
+          href="My.gmftool#//@palette/@tools.0/@tools.0"/>
       <diagramNode
           href="My.gmfgraph#Actor"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="My.ecore#//Model/hasAttackMethod"/>
+    <ownedChild>
+      <domainMetaElement
+          href="My.ecore#//AttackMethod"/>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="My.gmftool#//@palette/@tools.0/@tools.13"/>
+      <diagramNode
+          href="My.gmfgraph#AttackMethod"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -66,7 +79,7 @@
           href="My.ecore#//Plan"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.5"/>
+          href="My.gmftool#//@palette/@tools.0/@tools.6"/>
       <diagramNode
           href="My.gmfgraph#Plan"/>
     </ownedChild>
@@ -79,61 +92,9 @@
           href="My.ecore#//Threat"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.3"/>
+          href="My.gmftool#//@palette/@tools.0/@tools.4"/>
       <diagramNode
           href="My.gmfgraph#Threat"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="My.ecore#//Model/hasAttacker"/>
-    <ownedChild>
-      <domainMetaElement
-          href="My.ecore#//Attacker"/>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.10"/>
-      <diagramNode
-          href="My.gmfgraph#Attacker"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="My.ecore#//Model/hasResource"/>
-    <ownedChild>
-      <domainMetaElement
-          href="My.ecore#//Resource"/>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.9"/>
-      <diagramNode
-          href="My.gmfgraph#Resource"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="My.ecore#//Model/hasGoal"/>
-    <ownedChild>
-      <domainMetaElement
-          href="My.ecore#//Goal"/>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.0"/>
-      <diagramNode
-          href="My.gmfgraph#Goal"/>
-    </ownedChild>
-  </nodes>
-  <nodes>
-    <containmentFeature
-        href="My.ecore#//Model/hasSecurityMechanism"/>
-    <ownedChild>
-      <domainMetaElement
-          href="My.ecore#//SecurityMechanism"/>
-      <tool
-          xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.6"/>
-      <diagramNode
-          href="My.gmfgraph#SecurityMechanism"/>
     </ownedChild>
   </nodes>
   <nodes>
@@ -144,7 +105,7 @@
           href="My.ecore#//SecurityConstraint"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.4"/>
+          href="My.gmftool#//@palette/@tools.0/@tools.5"/>
       <diagramNode
           href="My.gmfgraph#SecurityConstraint"/>
     </ownedChild>
@@ -157,22 +118,61 @@
           href="My.ecore#//Vulnerability"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.11"/>
+          href="My.gmftool#//@palette/@tools.0/@tools.12"/>
       <diagramNode
           href="My.gmfgraph#Vulnerability"/>
     </ownedChild>
   </nodes>
   <nodes>
     <containmentFeature
-        href="My.ecore#//Model/hasSoftGoal"/>
+        href="My.ecore#//Model/hasSecurityObjective"/>
     <ownedChild>
       <domainMetaElement
-          href="My.ecore#//SoftGoal"/>
+          href="My.ecore#//SecurityObjective"/>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="My.gmftool#//@palette/@tools.0/@tools.8"/>
+          href="My.gmftool#//@palette/@tools.0/@tools.3"/>
       <diagramNode
-          href="My.gmfgraph#SoftGoal"/>
+          href="My.gmfgraph#SecurityObjective"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="My.ecore#//Model/hasGoal"/>
+    <ownedChild>
+      <domainMetaElement
+          href="My.ecore#//Goal"/>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="My.gmftool#//@palette/@tools.0/@tools.1"/>
+      <diagramNode
+          href="My.gmfgraph#Goal"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="My.ecore#//Model/hasResource"/>
+    <ownedChild>
+      <domainMetaElement
+          href="My.ecore#//Resource"/>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="My.gmftool#//@palette/@tools.0/@tools.10"/>
+      <diagramNode
+          href="My.gmfgraph#Resource"/>
+    </ownedChild>
+  </nodes>
+  <nodes>
+    <containmentFeature
+        href="My.ecore#//Model/hasAttacker"/>
+    <ownedChild>
+      <domainMetaElement
+          href="My.ecore#//Attacker"/>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="My.gmftool#//@palette/@tools.0/@tools.11"/>
+      <diagramNode
+          href="My.gmfgraph#Attacker"/>
     </ownedChild>
   </nodes>
   <links>
@@ -182,7 +182,7 @@
         href="My.ecore#//Model/hasDependencyLink"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="My.gmftool#//@palette/@tools.0/@tools.1"/>
+        href="My.gmftool#//@palette/@tools.0/@tools.2"/>
     <diagramLink
         href="My.gmfgraph#DependencyLink"/>
     <sourceMetaFeature

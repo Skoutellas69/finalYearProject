@@ -1,5 +1,6 @@
 package finalYearName.diagram.edit.parts;
 
+import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.Connection;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ConnectionNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ITreeBranchEditPart;
@@ -43,15 +44,31 @@ public class DependencyLinkEditPart extends ConnectionNodeEditPart implements
 	 * 
 	 * @generated
 	 */
+
 	protected Connection createConnectionFigure() {
-		return new PolylineConnectionEx();
+		return new DependencyLinkFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public PolylineConnectionEx getPrimaryShape() {
-		return (PolylineConnectionEx) getFigure();
+	public DependencyLinkFigure getPrimaryShape() {
+		return (DependencyLinkFigure) getFigure();
+	}
+
+	/**
+	 * @generated
+	 */
+	public class DependencyLinkFigure extends PolylineConnectionEx {
+
+		/**
+		 * @generated
+		 */
+		public DependencyLinkFigure() {
+			this.setForegroundColor(ColorConstants.darkGray);
+
+		}
+
 	}
 
 }

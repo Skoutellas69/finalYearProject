@@ -217,7 +217,7 @@
       <viewProvider class="finalYearName.diagram.providers.MyViewProvider">
          <Priority name="Lowest"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="My"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2008,2009,2007,2001,2004,2005,2010,2011,2002,2003,2006,2012,2013"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2013,2003,2009,2001,2008,2004,2005,2006,2012,2007,2002,2011,2010"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001"/>
       </viewProvider>
    </extension>
@@ -230,7 +230,7 @@
             <method name="getType()" value="My"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2008,2009,2007,2001,2004,2005,2010,2011,2002,2003,2006,2012,2013"/>
+            <method name="getType()" value="2013,2003,2009,2001,2008,2004,2005,2006,2012,2007,2002,2011,2010"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
             <method name="getType()" value="4001"/>
@@ -253,25 +253,30 @@
          <object class="finalYearName.diagram.edit.parts.ModelEditPart" id="Model_1000"/>
          <context elements="Model_1000"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfAttackMethodEditPart">
+            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfSoftGoalEditPart">
          <Priority name="Lowest"/>
-         <object class="finalYearName.diagram.edit.parts.AttackMethodEditPart" id="AttackMethod_2008"/>
-         <context elements="AttackMethod_2008"/>
+         <object class="finalYearName.diagram.edit.parts.SoftGoalEditPart" id="SoftGoal_2013"/>
+         <context elements="SoftGoal_2013"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfSecurityMechanismEditPart">
+         <Priority name="Lowest"/>
+         <object class="finalYearName.diagram.edit.parts.SecurityMechanismEditPart" id="SecurityMechanism_2003"/>
+         <context elements="SecurityMechanism_2003"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfOrganisationEditPart">
          <Priority name="Lowest"/>
          <object class="finalYearName.diagram.edit.parts.OrganisationEditPart" id="Organisation_2009"/>
          <context elements="Organisation_2009"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfSecurityObjectiveEditPart">
-         <Priority name="Lowest"/>
-         <object class="finalYearName.diagram.edit.parts.SecurityObjectiveEditPart" id="SecurityObjective_2007"/>
-         <context elements="SecurityObjective_2007"/>
-      </modelingAssistantProvider>
             <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfActorEditPart">
          <Priority name="Lowest"/>
          <object class="finalYearName.diagram.edit.parts.ActorEditPart" id="Actor_2001"/>
          <context elements="Actor_2001"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfAttackMethodEditPart">
+         <Priority name="Lowest"/>
+         <object class="finalYearName.diagram.edit.parts.AttackMethodEditPart" id="AttackMethod_2008"/>
+         <context elements="AttackMethod_2008"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfPlanEditPart">
          <Priority name="Lowest"/>
@@ -283,26 +288,6 @@
          <object class="finalYearName.diagram.edit.parts.ThreatEditPart" id="Threat_2005"/>
          <context elements="Threat_2005"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfAttackerEditPart">
-         <Priority name="Lowest"/>
-         <object class="finalYearName.diagram.edit.parts.AttackerEditPart" id="Attacker_2010"/>
-         <context elements="Attacker_2010"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfResourceEditPart">
-         <Priority name="Lowest"/>
-         <object class="finalYearName.diagram.edit.parts.ResourceEditPart" id="Resource_2011"/>
-         <context elements="Resource_2011"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfGoalEditPart">
-         <Priority name="Lowest"/>
-         <object class="finalYearName.diagram.edit.parts.GoalEditPart" id="Goal_2002"/>
-         <context elements="Goal_2002"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfSecurityMechanismEditPart">
-         <Priority name="Lowest"/>
-         <object class="finalYearName.diagram.edit.parts.SecurityMechanismEditPart" id="SecurityMechanism_2003"/>
-         <context elements="SecurityMechanism_2003"/>
-      </modelingAssistantProvider>
             <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfSecurityConstraintEditPart">
          <Priority name="Lowest"/>
          <object class="finalYearName.diagram.edit.parts.SecurityConstraintEditPart" id="SecurityConstraint_2006"/>
@@ -313,10 +298,25 @@
          <object class="finalYearName.diagram.edit.parts.VulnerabilityEditPart" id="Vulnerability_2012"/>
          <context elements="Vulnerability_2012"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfSoftGoalEditPart">
+            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfSecurityObjectiveEditPart">
          <Priority name="Lowest"/>
-         <object class="finalYearName.diagram.edit.parts.SoftGoalEditPart" id="SoftGoal_2013"/>
-         <context elements="SoftGoal_2013"/>
+         <object class="finalYearName.diagram.edit.parts.SecurityObjectiveEditPart" id="SecurityObjective_2007"/>
+         <context elements="SecurityObjective_2007"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfGoalEditPart">
+         <Priority name="Lowest"/>
+         <object class="finalYearName.diagram.edit.parts.GoalEditPart" id="Goal_2002"/>
+         <context elements="Goal_2002"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfResourceEditPart">
+         <Priority name="Lowest"/>
+         <object class="finalYearName.diagram.edit.parts.ResourceEditPart" id="Resource_2011"/>
+         <context elements="Resource_2011"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="finalYearName.diagram.providers.assistants.MyModelingAssistantProviderOfAttackerEditPart">
+         <Priority name="Lowest"/>
+         <object class="finalYearName.diagram.edit.parts.AttackerEditPart" id="Attacker_2010"/>
+         <context elements="Attacker_2010"/>
       </modelingAssistantProvider>
       
    </extension>
@@ -343,12 +343,22 @@
       </metamodel>
       <metamodel nsURI="finalYearURI">
          <metamodelType
-               id="FinalyearProject.diagram.AttackMethod_2008"
-               name="%metatype.name.AttackMethod_2008"
+               id="FinalyearProject.diagram.SoftGoal_2013"
+               name="%metatype.name.SoftGoal_2013"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="AttackMethod"
-               edithelper="finalYearName.diagram.edit.helpers.AttackMethodEditHelper">
-            <param name="semanticHint" value="2008"/>
+               eclass="SoftGoal"
+               edithelper="finalYearName.diagram.edit.helpers.SoftGoalEditHelper">
+            <param name="semanticHint" value="2013"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="finalYearURI">
+         <metamodelType
+               id="FinalyearProject.diagram.SecurityMechanism_2003"
+               name="%metatype.name.SecurityMechanism_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="SecurityMechanism"
+               edithelper="finalYearName.diagram.edit.helpers.SecurityMechanismEditHelper">
+            <param name="semanticHint" value="2003"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="finalYearURI">
@@ -363,22 +373,22 @@
       </metamodel>
       <metamodel nsURI="finalYearURI">
          <metamodelType
-               id="FinalyearProject.diagram.SecurityObjective_2007"
-               name="%metatype.name.SecurityObjective_2007"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="SecurityObjective"
-               edithelper="finalYearName.diagram.edit.helpers.SecurityObjectiveEditHelper">
-            <param name="semanticHint" value="2007"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="finalYearURI">
-         <metamodelType
                id="FinalyearProject.diagram.Actor_2001"
                name="%metatype.name.Actor_2001"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Actor"
                edithelper="finalYearName.diagram.edit.helpers.ActorEditHelper">
             <param name="semanticHint" value="2001"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="finalYearURI">
+         <metamodelType
+               id="FinalyearProject.diagram.AttackMethod_2008"
+               name="%metatype.name.AttackMethod_2008"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="AttackMethod"
+               edithelper="finalYearName.diagram.edit.helpers.AttackMethodEditHelper">
+            <param name="semanticHint" value="2008"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="finalYearURI">
@@ -403,46 +413,6 @@
       </metamodel>
       <metamodel nsURI="finalYearURI">
          <metamodelType
-               id="FinalyearProject.diagram.Attacker_2010"
-               name="%metatype.name.Attacker_2010"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Attacker"
-               edithelper="finalYearName.diagram.edit.helpers.AttackerEditHelper">
-            <param name="semanticHint" value="2010"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="finalYearURI">
-         <metamodelType
-               id="FinalyearProject.diagram.Resource_2011"
-               name="%metatype.name.Resource_2011"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Resource"
-               edithelper="finalYearName.diagram.edit.helpers.ResourceEditHelper">
-            <param name="semanticHint" value="2011"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="finalYearURI">
-         <metamodelType
-               id="FinalyearProject.diagram.Goal_2002"
-               name="%metatype.name.Goal_2002"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Goal"
-               edithelper="finalYearName.diagram.edit.helpers.GoalEditHelper">
-            <param name="semanticHint" value="2002"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="finalYearURI">
-         <metamodelType
-               id="FinalyearProject.diagram.SecurityMechanism_2003"
-               name="%metatype.name.SecurityMechanism_2003"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="SecurityMechanism"
-               edithelper="finalYearName.diagram.edit.helpers.SecurityMechanismEditHelper">
-            <param name="semanticHint" value="2003"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="finalYearURI">
-         <metamodelType
                id="FinalyearProject.diagram.SecurityConstraint_2006"
                name="%metatype.name.SecurityConstraint_2006"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
@@ -463,12 +433,42 @@
       </metamodel>
       <metamodel nsURI="finalYearURI">
          <metamodelType
-               id="FinalyearProject.diagram.SoftGoal_2013"
-               name="%metatype.name.SoftGoal_2013"
+               id="FinalyearProject.diagram.SecurityObjective_2007"
+               name="%metatype.name.SecurityObjective_2007"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="SoftGoal"
-               edithelper="finalYearName.diagram.edit.helpers.SoftGoalEditHelper">
-            <param name="semanticHint" value="2013"/>
+               eclass="SecurityObjective"
+               edithelper="finalYearName.diagram.edit.helpers.SecurityObjectiveEditHelper">
+            <param name="semanticHint" value="2007"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="finalYearURI">
+         <metamodelType
+               id="FinalyearProject.diagram.Goal_2002"
+               name="%metatype.name.Goal_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Goal"
+               edithelper="finalYearName.diagram.edit.helpers.GoalEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="finalYearURI">
+         <metamodelType
+               id="FinalyearProject.diagram.Resource_2011"
+               name="%metatype.name.Resource_2011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Resource"
+               edithelper="finalYearName.diagram.edit.helpers.ResourceEditHelper">
+            <param name="semanticHint" value="2011"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="finalYearURI">
+         <metamodelType
+               id="FinalyearProject.diagram.Attacker_2010"
+               name="%metatype.name.Attacker_2010"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Attacker"
+               edithelper="finalYearName.diagram.edit.helpers.AttackerEditHelper">
+            <param name="semanticHint" value="2010"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="finalYearURI">
@@ -494,19 +494,19 @@
       </clientContext> 
       <binding context="FinalyearProject.diagram.TypeContext">
          <elementType ref="FinalyearProject.diagram.Model_1000"/>
-         <elementType ref="FinalyearProject.diagram.AttackMethod_2008"/>
+         <elementType ref="FinalyearProject.diagram.SoftGoal_2013"/>
+         <elementType ref="FinalyearProject.diagram.SecurityMechanism_2003"/>
          <elementType ref="FinalyearProject.diagram.Organisation_2009"/>
-         <elementType ref="FinalyearProject.diagram.SecurityObjective_2007"/>
          <elementType ref="FinalyearProject.diagram.Actor_2001"/>
+         <elementType ref="FinalyearProject.diagram.AttackMethod_2008"/>
          <elementType ref="FinalyearProject.diagram.Plan_2004"/>
          <elementType ref="FinalyearProject.diagram.Threat_2005"/>
-         <elementType ref="FinalyearProject.diagram.Attacker_2010"/>
-         <elementType ref="FinalyearProject.diagram.Resource_2011"/>
-         <elementType ref="FinalyearProject.diagram.Goal_2002"/>
-         <elementType ref="FinalyearProject.diagram.SecurityMechanism_2003"/>
          <elementType ref="FinalyearProject.diagram.SecurityConstraint_2006"/>
          <elementType ref="FinalyearProject.diagram.Vulnerability_2012"/>
-         <elementType ref="FinalyearProject.diagram.SoftGoal_2013"/>
+         <elementType ref="FinalyearProject.diagram.SecurityObjective_2007"/>
+         <elementType ref="FinalyearProject.diagram.Goal_2002"/>
+         <elementType ref="FinalyearProject.diagram.Resource_2011"/>
+         <elementType ref="FinalyearProject.diagram.Attacker_2010"/>
          <elementType ref="FinalyearProject.diagram.DependencyLink_4001"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>

@@ -1,9 +1,11 @@
 package finalYearName.diagram.edit.parts;
 
+import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
+import org.eclipse.draw2d.ScalablePolygonShape;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
@@ -13,9 +15,11 @@ import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -88,14 +92,14 @@ public class ResourceEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected IFigure createNodeShape() {
-		return primaryShape = new RectangleFigure();
+		return primaryShape = new ResourceFigure();
 	}
 
 	/**
 	 * @generated
 	 */
-	public RectangleFigure getPrimaryShape() {
-		return (RectangleFigure) primaryShape;
+	public ResourceFigure getPrimaryShape() {
+		return (ResourceFigure) primaryShape;
 	}
 
 	/**
@@ -178,5 +182,65 @@ public class ResourceEditPart extends ShapeNodeEditPart {
 			((Shape) primaryShape).setLineStyle(style);
 		}
 	}
+
+	/**
+	 * @generated
+	 */
+	public class ResourceFigure extends ScalablePolygonShape {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureResourceFigureLabel;
+
+		/**
+		 * @generated
+		 */
+		public ResourceFigure() {
+			this.setLayoutManager(new CenterLayout());
+			this.addPoint(new Point(getMapMode().DPtoLP(0), getMapMode()
+					.DPtoLP(0)));
+			this.addPoint(new Point(getMapMode().DPtoLP(0), getMapMode()
+					.DPtoLP(20)));
+			this.addPoint(new Point(getMapMode().DPtoLP(20), getMapMode()
+					.DPtoLP(30)));
+			this.addPoint(new Point(getMapMode().DPtoLP(30), getMapMode()
+					.DPtoLP(30)));
+			this.addPoint(new Point(getMapMode().DPtoLP(50), getMapMode()
+					.DPtoLP(20)));
+			this.addPoint(new Point(getMapMode().DPtoLP(50), getMapMode()
+					.DPtoLP(0)));
+			this.setFill(true);
+			this.setForegroundColor(ColorConstants.white);
+			this.setBackgroundColor(THIS_BACK);
+			createContents();
+		}
+
+		/**
+		 * @generated
+		 */
+		private void createContents() {
+
+			fFigureResourceFigureLabel = new WrappingLabel();
+
+			fFigureResourceFigureLabel.setText("     RESOURCE");
+
+			this.add(fFigureResourceFigureLabel);
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureResourceFigureLabel() {
+			return fFigureResourceFigureLabel;
+		}
+
+	}
+
+	/**
+	 * @generated
+	 */
+	static final Color THIS_BACK = new Color(null, 64, 64, 64);
 
 }

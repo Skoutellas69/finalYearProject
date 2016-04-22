@@ -1,27 +1,25 @@
 package finalYearName.diagram.edit.parts;
 
 import org.eclipse.draw2d.ColorConstants;
+import org.eclipse.draw2d.Ellipse;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
-import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
-import org.eclipse.draw2d.XYLayout;
-import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
+import org.eclipse.gef.Request;
+import org.eclipse.gef.commands.Command;
 import org.eclipse.gef.editpolicies.LayoutEditPolicy;
+import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
+import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
-import org.eclipse.gmf.runtime.diagram.ui.editpolicies.ResizableShapeEditPolicy;
-import org.eclipse.gmf.runtime.diagram.ui.editpolicies.XYLayoutEditPolicy;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
-import org.eclipse.swt.SWT;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
-import org.eclipse.swt.graphics.Font;
-import org.eclipse.swt.widgets.Display;
 
 /**
  * @generated
@@ -67,14 +65,23 @@ public class ActorEditPart extends ShapeNodeEditPart {
 	 * @generated
 	 */
 	protected LayoutEditPolicy createLayoutEditPolicy() {
-		XYLayoutEditPolicy lep = new XYLayoutEditPolicy() {
+		org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy lep = new org.eclipse.gmf.runtime.diagram.ui.editpolicies.LayoutEditPolicy() {
 
 			protected EditPolicy createChildEditPolicy(EditPart child) {
-				EditPolicy result = super.createChildEditPolicy(child);
+				EditPolicy result = child
+						.getEditPolicy(EditPolicy.PRIMARY_DRAG_ROLE);
 				if (result == null) {
-					return new ResizableShapeEditPolicy();
+					result = new NonResizableEditPolicy();
 				}
 				return result;
+			}
+
+			protected Command getMoveChildrenCommand(Request request) {
+				return null;
+			}
+
+			protected Command getCreateCommand(CreateRequest request) {
+				return null;
 			}
 		};
 		return lep;
@@ -178,17 +185,20 @@ public class ActorEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class ActorFigure extends RectangleFigure {
+	public class ActorFigure extends Ellipse {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureActorFigureLabel;
 
 		/**
 		 * @generated
 		 */
 		public ActorFigure() {
-			this.setLayoutManager(new XYLayout());
-			this.setBackgroundColor(ColorConstants.darkGray);
-
-			this.setFont(THIS_FONT);
-
+			this.setLayoutManager(new CenterLayout());
+			this.setForegroundColor(ColorConstants.black);
+			this.setBackgroundColor(THIS_BACK);
 			createContents();
 		}
 
@@ -197,13 +207,21 @@ public class ActorEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			RoundedRectangle roundedRectangleFigure0 = new RoundedRectangle();
+			fFigureActorFigureLabel = new WrappingLabel();
 
-			roundedRectangleFigure0.setCornerDimensions(new Dimension(
-					getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
+			fFigureActorFigureLabel.setText("    ACTOR");
+			fFigureActorFigureLabel.setForegroundColor(ColorConstants.black);
 
-			this.add(roundedRectangleFigure0);
+			this.add(fFigureActorFigureLabel);
+			fFigureActorFigureLabel.setLayoutManager(new CenterLayout());
 
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureActorFigureLabel() {
+			return fFigureActorFigureLabel;
 		}
 
 	}
@@ -211,7 +229,6 @@ public class ActorEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	static final Font THIS_FONT = new Font(Display.getCurrent(), "ACTOR", 9,
-			SWT.NORMAL);
+	static final Color THIS_BACK = new Color(null, 153, 51, 255);
 
 }

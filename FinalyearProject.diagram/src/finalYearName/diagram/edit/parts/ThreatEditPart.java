@@ -1,11 +1,11 @@
 package finalYearName.diagram.edit.parts;
 
 import org.eclipse.draw2d.ColorConstants;
-import org.eclipse.draw2d.Ellipse;
 import org.eclipse.draw2d.IFigure;
-import org.eclipse.draw2d.RectangleFigure;
+import org.eclipse.draw2d.ScalablePolygonShape;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
+import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.gef.EditPart;
 import org.eclipse.gef.EditPolicy;
 import org.eclipse.gef.Request;
@@ -15,9 +15,11 @@ import org.eclipse.gef.editpolicies.NonResizableEditPolicy;
 import org.eclipse.gef.requests.CreateRequest;
 import org.eclipse.gmf.runtime.diagram.ui.editparts.ShapeNodeEditPart;
 import org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles;
+import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -184,13 +186,31 @@ public class ThreatEditPart extends ShapeNodeEditPart {
 	/**
 	 * @generated
 	 */
-	public class ThreatFigure extends RectangleFigure {
+	public class ThreatFigure extends ScalablePolygonShape {
+
+		/**
+		 * @generated
+		 */
+		private WrappingLabel fFigureThreatFigureLabel;
 
 		/**
 		 * @generated
 		 */
 		public ThreatFigure() {
-			this.setBackgroundColor(ColorConstants.green);
+			this.setLayoutManager(new CenterLayout());
+			this.addPoint(new Point(getMapMode().DPtoLP(10), getMapMode()
+					.DPtoLP(0)));
+			this.addPoint(new Point(getMapMode().DPtoLP(0), getMapMode()
+					.DPtoLP(20)));
+			this.addPoint(new Point(getMapMode().DPtoLP(30), getMapMode()
+					.DPtoLP(40)));
+			this.addPoint(new Point(getMapMode().DPtoLP(60), getMapMode()
+					.DPtoLP(20)));
+			this.addPoint(new Point(getMapMode().DPtoLP(50), getMapMode()
+					.DPtoLP(0)));
+			this.setFill(true);
+			this.setForegroundColor(ColorConstants.black);
+			this.setBackgroundColor(ColorConstants.lightGray);
 			createContents();
 		}
 
@@ -199,10 +219,20 @@ public class ThreatEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			Ellipse tHREAT0 = new Ellipse();
+			fFigureThreatFigureLabel = new WrappingLabel();
 
-			this.add(tHREAT0);
+			fFigureThreatFigureLabel.setText("     THREAT");
 
+			this.add(fFigureThreatFigureLabel);
+			fFigureThreatFigureLabel.setLayoutManager(new CenterLayout());
+
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureThreatFigureLabel() {
+			return fFigureThreatFigureLabel;
 		}
 
 	}

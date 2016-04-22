@@ -1,5 +1,6 @@
 package finalYearName.diagram.edit.parts;
 
+import org.eclipse.draw2d.ColorConstants;
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
@@ -18,6 +19,7 @@ import org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel;
 import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.gmf.runtime.gef.ui.figures.NodeFigure;
 import org.eclipse.gmf.runtime.notation.View;
+import org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout;
 import org.eclipse.swt.graphics.Color;
 
 /**
@@ -189,9 +191,17 @@ public class GoalEditPart extends ShapeNodeEditPart {
 		/**
 		 * @generated
 		 */
+		private WrappingLabel fFigureGoalFigureLabel;
+
+		/**
+		 * @generated
+		 */
 		public GoalFigure() {
+			this.setLayoutManager(new CenterLayout());
 			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8),
 					getMapMode().DPtoLP(8)));
+			this.setForegroundColor(ColorConstants.black);
+			this.setBackgroundColor(ColorConstants.lightBlue);
 			createContents();
 		}
 
@@ -200,12 +210,20 @@ public class GoalEditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			WrappingLabel a0 = new WrappingLabel();
+			fFigureGoalFigureLabel = new WrappingLabel();
 
-			a0.setText("aggelos");
+			fFigureGoalFigureLabel.setText("      GOAL");
 
-			this.add(a0);
+			this.add(fFigureGoalFigureLabel);
+			fFigureGoalFigureLabel.setLayoutManager(new CenterLayout());
 
+		}
+
+		/**
+		 * @generated
+		 */
+		public WrappingLabel getFigureGoalFigureLabel() {
+			return fFigureGoalFigureLabel;
 		}
 
 	}

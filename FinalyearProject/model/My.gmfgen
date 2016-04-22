@@ -22,27 +22,63 @@
     <domainDiagramElement
         href="My.genmodel#//finalYearName/Model"/>
     <topLevelNodes
-        visualID="2008"
-        editPartClassName="AttackMethodEditPart"
-        itemSemanticEditPolicyClassName="AttackMethodItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="AttackMethodCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="AttackMethodGraphicalNodeEditPolicy"
-        createCommandClassName="AttackMethodCreateCommand">
+        visualID="2013"
+        editPartClassName="SoftGoalEditPart"
+        itemSemanticEditPolicyClassName="SoftGoalItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="SoftGoalCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="SoftGoalGraphicalNodeEditPolicy"
+        createCommandClassName="SoftGoalCreateCommand">
       <diagramRunTimeClass
           href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType
           xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="AttackMethodEditHelper"/>
+          editHelperClassName="SoftGoalEditHelper"/>
       <viewmap
-          xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="SoftGoalFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SoftGoalFigure extends org.eclipse.draw2d.ScalablePolygonShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureSoftGoalFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SoftGoalFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(60)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(60)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(40)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.setFill(true);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureSoftGoalFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureSoftGoalFigureLabel.setText(&quot;   SOFT GOAL&quot;);&#xA;&#xA;this.add(fFigureSoftGoalFigureLabel);&#xA;fFigureSoftGoalFigureLabel.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureSoftGoalFigureLabel() {&#xA;&#x9;&#x9;return fFigureSoftGoalFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 0, 255, 255);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
       <modelFacet>
         <metaClass
-            href="My.genmodel#//finalYearName/AttackMethod"/>
+            href="My.genmodel#//finalYearName/SoftGoal"/>
         <containmentMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasAttackMethod"/>
+            href="My.genmodel#//finalYearName/Model/hasSoftGoal"/>
         <childMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasAttackMethod"/>
+            href="My.genmodel#//finalYearName/Model/hasSoftGoal"/>
+      </modelFacet>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2003"
+        editPartClassName="SecurityMechanismEditPart"
+        itemSemanticEditPolicyClassName="SecurityMechanismItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="SecurityMechanismCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="SecurityMechanismGraphicalNodeEditPolicy"
+        createCommandClassName="SecurityMechanismCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="SecurityMechanismEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="SecurityMechanismFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SecurityMechanismFigure extends org.eclipse.draw2d.ScalablePolygonShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureSecurityMechanismLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SecurityMechanismFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(60)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(80)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(60)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.setFill(true);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureSecurityMechanismLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureSecurityMechanismLabel.setText(&quot;    SECURITY MECHANISM&quot;);&#xA;&#xA;this.add(fFigureSecurityMechanismLabel);&#xA;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutFFigureSecurityMechanismLabel = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;fFigureSecurityMechanismLabel.setLayoutManager(layoutFFigureSecurityMechanismLabel);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureSecurityMechanismLabel() {&#xA;&#x9;&#x9;return fFigureSecurityMechanismLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 164, 20, 20);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="My.genmodel#//finalYearName/SecurityMechanism"/>
+        <containmentMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasSecurityMechanism"/>
+        <childMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasSecurityMechanism"/>
       </modelFacet>
     </topLevelNodes>
     <topLevelNodes
@@ -60,7 +96,12 @@
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
           className="OrganisationFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class OrganisationFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public OrganisationFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DASH);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class OrganisationFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureOrganisationFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public OrganisationFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;this.setLineStyle(org.eclipse.draw2d.Graphics.LINE_DOT);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureOrganisationFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureOrganisationFigureLabel.setText(&quot;     ORGANISATION&quot;);&#xA;&#xA;this.add(fFigureOrganisationFigureLabel);&#xA;fFigureOrganisationFigureLabel.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureOrganisationFigureLabel() {&#xA;&#x9;&#x9;return fFigureOrganisationFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 255, 255, 204);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
       <modelFacet>
         <metaClass
             href="My.genmodel#//finalYearName/Organisation"/>
@@ -68,31 +109,6 @@
             href="My.genmodel#//finalYearName/Model/hasOrganisation"/>
         <childMetaFeature
             href="My.genmodel#//finalYearName/Model/hasOrganisation"/>
-      </modelFacet>
-    </topLevelNodes>
-    <topLevelNodes
-        visualID="2007"
-        editPartClassName="SecurityObjectiveEditPart"
-        itemSemanticEditPolicyClassName="SecurityObjectiveItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="SecurityObjectiveCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="SecurityObjectiveGraphicalNodeEditPolicy"
-        createCommandClassName="SecurityObjectiveCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="SecurityObjectiveEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          className="SecurityObjectiveFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SecurityObjectiveFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SecurityObjectiveFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.ScalablePolygonShape polyline0 = new org.eclipse.draw2d.ScalablePolygonShape();&#xA;&#xA;polyline0.setFill(true);&#xA;&#x9;polyline0.setBackgroundColor(org.eclipse.draw2d.ColorConstants.blue);&#xA;&#xA;this.add(polyline0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="My.genmodel#//finalYearName/SecurityObjective"/>
-        <containmentMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasSecurityObjective"/>
-        <childMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasSecurityObjective"/>
       </modelFacet>
     </topLevelNodes>
     <topLevelNodes
@@ -109,12 +125,11 @@
           editHelperClassName="ActorEditHelper"/>
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="XY_LAYOUT"
           className="ActorFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ActorFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ActorFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.draw2d.XYLayout());&#xA;&#x9;&#x9;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.darkGray);&#xA;&#xA;this.setFont(THIS_FONT);&#xA;&#xA;&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.RoundedRectangle roundedRectangleFigure0 = new org.eclipse.draw2d.RoundedRectangle();&#xA;&#xA;roundedRectangleFigure0.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#xA;this.add(roundedRectangleFigure0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Font THIS_FONT = new org.eclipse.swt.graphics.Font(org.eclipse.swt.widgets.Display.getCurrent(), &quot;ACTOR&quot;, 9, org.eclipse.swt.SWT.NORMAL);&#xA;&#xA;">
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ActorFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureActorFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ActorFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureActorFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureActorFigureLabel.setText(&quot;    ACTOR&quot;);&#xA;&#x9;fFigureActorFigureLabel.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#xA;this.add(fFigureActorFigureLabel);&#xA;fFigureActorFigureLabel.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureActorFigureLabel() {&#xA;&#x9;&#x9;return fFigureActorFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 153, 51, 255);&#xA;&#xA;">
         <attributes
             xsi:type="gmfgen:StyleAttributes"
-            fixedFont="true"
+            fixedForeground="true"
             fixedBackground="true"/>
       </viewmap>
       <modelFacet>
@@ -124,6 +139,36 @@
             href="My.genmodel#//finalYearName/Model/hasActor"/>
         <childMetaFeature
             href="My.genmodel#//finalYearName/Model/hasActor"/>
+      </modelFacet>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2008"
+        editPartClassName="AttackMethodEditPart"
+        itemSemanticEditPolicyClassName="AttackMethodItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="AttackMethodCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="AttackMethodGraphicalNodeEditPolicy"
+        createCommandClassName="AttackMethodCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="AttackMethodEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="AttackMethodFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AttackMethodFigure extends org.eclipse.draw2d.ScalablePolygonShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureAttackMethodFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AttackMethodFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(10)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(60)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(50)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(40)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(40)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.setFill(true);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.darkBlue);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureAttackMethodFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureAttackMethodFigureLabel.setText(&quot;    ATTACK METHOD&quot;);&#xA;&#xA;this.add(fFigureAttackMethodFigureLabel);&#xA;fFigureAttackMethodFigureLabel.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureAttackMethodFigureLabel() {&#xA;&#x9;&#x9;return fFigureAttackMethodFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="My.genmodel#//finalYearName/AttackMethod"/>
+        <containmentMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasAttackMethod"/>
+        <childMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasAttackMethod"/>
       </modelFacet>
     </topLevelNodes>
     <topLevelNodes
@@ -141,7 +186,12 @@
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
           className="PlanFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PlanFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PlanFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.PolygonShape pLAN0 = new org.eclipse.draw2d.PolygonShape();&#xA;&#xA;pLAN0.setFill(true);&#xA;&#x9;pLAN0.setBackgroundColor(org.eclipse.draw2d.ColorConstants.gray);&#xA;&#xA;this.add(pLAN0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PlanFigure extends org.eclipse.draw2d.ScalablePolygonShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePlanFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PlanFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(40)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(60)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(40)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.setFill(true);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.yellow);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigurePlanFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePlanFigureLabel.setText(&quot;    PLAN&quot;);&#xA;&#xA;this.add(fFigurePlanFigureLabel);&#xA;fFigurePlanFigureLabel.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePlanFigureLabel() {&#xA;&#x9;&#x9;return fFigurePlanFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
       <modelFacet>
         <metaClass
             href="My.genmodel#//finalYearName/Plan"/>
@@ -166,9 +216,10 @@
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
           className="ThreatFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ThreatFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ThreatFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.green);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.Ellipse tHREAT0 = new org.eclipse.draw2d.Ellipse();&#xA;&#xA;&#xA;this.add(tHREAT0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ThreatFigure extends org.eclipse.draw2d.ScalablePolygonShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureThreatFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ThreatFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(60)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(50)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.setFill(true);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.lightGray);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureThreatFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureThreatFigureLabel.setText(&quot;     THREAT&quot;);&#xA;&#xA;this.add(fFigureThreatFigureLabel);&#xA;fFigureThreatFigureLabel.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureThreatFigureLabel() {&#xA;&#x9;&#x9;return fFigureThreatFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;">
         <attributes
             xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
             fixedBackground="true"/>
       </viewmap>
       <modelFacet>
@@ -178,104 +229,6 @@
             href="My.genmodel#//finalYearName/Model/hasThreat"/>
         <childMetaFeature
             href="My.genmodel#//finalYearName/Model/hasThreat"/>
-      </modelFacet>
-    </topLevelNodes>
-    <topLevelNodes
-        visualID="2010"
-        editPartClassName="AttackerEditPart"
-        itemSemanticEditPolicyClassName="AttackerItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="AttackerCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="AttackerGraphicalNodeEditPolicy"
-        createCommandClassName="AttackerCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="AttackerEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          className="AttackerFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AttackerFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AttackerFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.PolygonShape polyline0 = new org.eclipse.draw2d.PolygonShape();&#xA;&#xA;polyline0.setFill(true);&#xA;&#xA;this.add(polyline0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="My.genmodel#//finalYearName/Attacker"/>
-        <containmentMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasAttacker"/>
-        <childMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasAttacker"/>
-      </modelFacet>
-    </topLevelNodes>
-    <topLevelNodes
-        visualID="2011"
-        editPartClassName="ResourceEditPart"
-        itemSemanticEditPolicyClassName="ResourceItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="ResourceCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="ResourceGraphicalNodeEditPolicy"
-        createCommandClassName="ResourceCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="ResourceEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
-      <modelFacet>
-        <metaClass
-            href="My.genmodel#//finalYearName/Resource"/>
-        <containmentMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasResource"/>
-        <childMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasResource"/>
-      </modelFacet>
-    </topLevelNodes>
-    <topLevelNodes
-        visualID="2002"
-        editPartClassName="GoalEditPart"
-        itemSemanticEditPolicyClassName="GoalItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="GoalCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="GoalGraphicalNodeEditPolicy"
-        createCommandClassName="GoalCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="GoalEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:InnerClassViewmap"
-          className="GoalFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GoalFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GoalFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel a0 = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;a0.setText(&quot;aggelos&quot;);&#xA;&#xA;this.add(a0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
-      <modelFacet>
-        <metaClass
-            href="My.genmodel#//finalYearName/Goal"/>
-        <containmentMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasGoal"/>
-        <childMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasGoal"/>
-      </modelFacet>
-    </topLevelNodes>
-    <topLevelNodes
-        visualID="2003"
-        editPartClassName="SecurityMechanismEditPart"
-        itemSemanticEditPolicyClassName="SecurityMechanismItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="SecurityMechanismCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="SecurityMechanismGraphicalNodeEditPolicy"
-        createCommandClassName="SecurityMechanismCreateCommand">
-      <diagramRunTimeClass
-          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
-      <elementType
-          xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="SecurityMechanismEditHelper"/>
-      <viewmap
-          xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
-      <modelFacet>
-        <metaClass
-            href="My.genmodel#//finalYearName/SecurityMechanism"/>
-        <containmentMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasSecurityMechanism"/>
-        <childMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasSecurityMechanism"/>
       </modelFacet>
     </topLevelNodes>
     <topLevelNodes
@@ -293,7 +246,12 @@
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
           className="SecurityConstraintFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SecurityConstraintFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SecurityConstraintFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.ScalablePolygonShape securityConstraint0 = new org.eclipse.draw2d.ScalablePolygonShape();&#xA;&#xA;securityConstraint0.setFill(true);&#xA;&#xA;this.add(securityConstraint0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SecurityConstraintFigure extends org.eclipse.draw2d.ScalablePolygonShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureSecurityConstraintLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SecurityConstraintFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(10)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(40)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(40)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(40)&#xA;, getMapMode().DPtoLP(10)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.setFill(true);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureSecurityConstraintLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureSecurityConstraintLabel.setText(&quot;    SECURITY CONSTRAINT&quot;);&#xA;&#xA;this.add(fFigureSecurityConstraintLabel);&#xA;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutFFigureSecurityConstraintLabel = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutFFigureSecurityConstraintLabel.setStretchMinorAxis(false);&#xA;&#x9;layoutFFigureSecurityConstraintLabel.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutFFigureSecurityConstraintLabel.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutFFigureSecurityConstraintLabel.setMajorSpacing(5);&#xA;&#x9;layoutFFigureSecurityConstraintLabel.setMinorSpacing(5);&#xA;&#x9;layoutFFigureSecurityConstraintLabel.setHorizontal(true);&#xA;&#xA;&#x9;fFigureSecurityConstraintLabel.setLayoutManager(layoutFFigureSecurityConstraintLabel);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureSecurityConstraintLabel() {&#xA;&#x9;&#x9;return fFigureSecurityConstraintLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 255, 0, 127);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
       <modelFacet>
         <metaClass
             href="My.genmodel#//finalYearName/SecurityConstraint"/>
@@ -316,8 +274,14 @@
           xsi:type="gmfgen:MetamodelType"
           editHelperClassName="VulnerabilityEditHelper"/>
       <viewmap
-          xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="VulnerabilityFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class VulnerabilityFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureVulnerabilityFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public VulnerabilityFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureVulnerabilityFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureVulnerabilityFigureLabel.setText(&quot;     VULNERABILITY&quot;);&#xA;&#xA;this.add(fFigureVulnerabilityFigureLabel);&#xA;fFigureVulnerabilityFigureLabel.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureVulnerabilityFigureLabel() {&#xA;&#x9;&#x9;return fFigureVulnerabilityFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 153, 255, 153);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
       <modelFacet>
         <metaClass
             href="My.genmodel#//finalYearName/Vulnerability"/>
@@ -328,27 +292,124 @@
       </modelFacet>
     </topLevelNodes>
     <topLevelNodes
-        visualID="2013"
-        editPartClassName="SoftGoalEditPart"
-        itemSemanticEditPolicyClassName="SoftGoalItemSemanticEditPolicy"
-        canonicalEditPolicyClassName="SoftGoalCanonicalEditPolicy"
-        graphicalNodeEditPolicyClassName="SoftGoalGraphicalNodeEditPolicy"
-        createCommandClassName="SoftGoalCreateCommand">
+        visualID="2007"
+        editPartClassName="SecurityObjectiveEditPart"
+        itemSemanticEditPolicyClassName="SecurityObjectiveItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="SecurityObjectiveCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="SecurityObjectiveGraphicalNodeEditPolicy"
+        createCommandClassName="SecurityObjectiveCreateCommand">
       <diagramRunTimeClass
           href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
       <elementType
           xsi:type="gmfgen:MetamodelType"
-          editHelperClassName="SoftGoalEditHelper"/>
+          editHelperClassName="SecurityObjectiveEditHelper"/>
       <viewmap
-          xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.draw2d.RectangleFigure"/>
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="SecurityObjectiveFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SecurityObjectiveFigure extends org.eclipse.draw2d.ScalablePolygonShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureSecurityObjectiveFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SecurityObjectiveFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(10)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(10)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.setFill(true);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.red);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureSecurityObjectiveFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureSecurityObjectiveFigureLabel.setText(&quot;    SECURITY OBJECTIVE&quot;);&#xA;&#xA;this.add(fFigureSecurityObjectiveFigureLabel);&#xA;&#xA;&#x9;org.eclipse.draw2d.BorderLayout layoutFFigureSecurityObjectiveFigureLabel = new org.eclipse.draw2d.BorderLayout();&#xA;&#x9;fFigureSecurityObjectiveFigureLabel.setLayoutManager(layoutFFigureSecurityObjectiveFigureLabel);&#xA;&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureSecurityObjectiveFigureLabel() {&#xA;&#x9;&#x9;return fFigureSecurityObjectiveFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
       <modelFacet>
         <metaClass
-            href="My.genmodel#//finalYearName/SoftGoal"/>
+            href="My.genmodel#//finalYearName/SecurityObjective"/>
         <containmentMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasSoftGoal"/>
+            href="My.genmodel#//finalYearName/Model/hasSecurityObjective"/>
         <childMetaFeature
-            href="My.genmodel#//finalYearName/Model/hasSoftGoal"/>
+            href="My.genmodel#//finalYearName/Model/hasSecurityObjective"/>
+      </modelFacet>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2002"
+        editPartClassName="GoalEditPart"
+        itemSemanticEditPolicyClassName="GoalItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="GoalCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="GoalGraphicalNodeEditPolicy"
+        createCommandClassName="GoalCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="GoalEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="GoalFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class GoalFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureGoalFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public GoalFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.lightBlue);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureGoalFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureGoalFigureLabel.setText(&quot;      GOAL&quot;);&#xA;&#xA;this.add(fFigureGoalFigureLabel);&#xA;fFigureGoalFigureLabel.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureGoalFigureLabel() {&#xA;&#x9;&#x9;return fFigureGoalFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="My.genmodel#//finalYearName/Goal"/>
+        <containmentMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasGoal"/>
+        <childMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasGoal"/>
+      </modelFacet>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2011"
+        editPartClassName="ResourceEditPart"
+        itemSemanticEditPolicyClassName="ResourceItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="ResourceCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="ResourceGraphicalNodeEditPolicy"
+        createCommandClassName="ResourceCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="ResourceEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="ResourceFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ResourceFigure extends org.eclipse.draw2d.ScalablePolygonShape {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureResourceFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ResourceFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#x9;&#x9;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(0)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(20)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(30)&#xA;, getMapMode().DPtoLP(30)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(50)&#xA;, getMapMode().DPtoLP(20)&#xA;));&#xA;this.addPoint(new org.eclipse.draw2d.geometry.Point(getMapMode().DPtoLP(50)&#xA;, getMapMode().DPtoLP(0)&#xA;));&#xA;this.setFill(true);&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.white);&#xA;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureResourceFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureResourceFigureLabel.setText(&quot;     RESOURCE&quot;);&#xA;&#xA;this.add(fFigureResourceFigureLabel);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureResourceFigureLabel() {&#xA;&#x9;&#x9;return fFigureResourceFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 64, 64, 64);&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="My.genmodel#//finalYearName/Resource"/>
+        <containmentMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasResource"/>
+        <childMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasResource"/>
+      </modelFacet>
+    </topLevelNodes>
+    <topLevelNodes
+        visualID="2010"
+        editPartClassName="AttackerEditPart"
+        itemSemanticEditPolicyClassName="AttackerItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="AttackerCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="AttackerGraphicalNodeEditPolicy"
+        createCommandClassName="AttackerCreateCommand">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="AttackerEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:InnerClassViewmap"
+          layoutType="FLOW_LAYOUT"
+          className="AttackerFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class AttackerFigure extends org.eclipse.draw2d.RoundedRectangle {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigureAttackerFigureLabel; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public AttackerFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;this.setCornerDimensions(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(8)&#xA;, getMapMode().DPtoLP(8)&#xA;));&#xA;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.black);&#xA;&#x9;this.setBackgroundColor(org.eclipse.draw2d.ColorConstants.darkGreen);&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigureAttackerFigureLabel = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigureAttackerFigureLabel.setText(&quot;    ATTACKER&quot;);&#xA;&#xA;this.add(fFigureAttackerFigureLabel);&#xA;fFigureAttackerFigureLabel.setLayoutManager(new org.eclipse.gmf.tooling.runtime.draw2d.CenterLayout());&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigureAttackerFigureLabel() {&#xA;&#x9;&#x9;return fFigureAttackerFigureLabel;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"
+            fixedBackground="true"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass
+            href="My.genmodel#//finalYearName/Attacker"/>
+        <containmentMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasAttacker"/>
+        <childMetaFeature
+            href="My.genmodel#//finalYearName/Model/hasAttacker"/>
       </modelFacet>
     </topLevelNodes>
     <links
@@ -363,8 +424,13 @@
           xsi:type="gmfgen:MetamodelType"
           editHelperClassName="DependencyLinkEditHelper"/>
       <viewmap
-          xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx"/>
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="DependencyLinkFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DependencyLinkFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DependencyLinkFigure() {&#xA;&#x9;&#x9;&#x9;this.setForegroundColor(org.eclipse.draw2d.ColorConstants.darkGray);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes
+            xsi:type="gmfgen:StyleAttributes"
+            fixedForeground="true"/>
+      </viewmap>
       <modelFacet
           xsi:type="gmfgen:TypeLinkModelFacet">
         <metaClass
@@ -384,9 +450,14 @@
           title="finalYearName">
         <entries
             xsi:type="gmfgen:ToolEntry"
+            title="Actor"
+            description="Create new Actor"
+            genNodes="//@diagram/@topLevelNodes.3"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
             title="Goal"
             description="Create new Goal"
-            genNodes="//@diagram/@topLevelNodes.8"/>
+            genNodes="//@diagram/@topLevelNodes.10"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="DependencyLink"
@@ -396,63 +467,89 @@
             xsi:type="gmfgen:ToolEntry"
             title="SecurityObjective"
             description="Create new SecurityObjective"
-            genNodes="//@diagram/@topLevelNodes.2"/>
+            genNodes="//@diagram/@topLevelNodes.9"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Threat"
             description="Create new Threat"
-            genNodes="//@diagram/@topLevelNodes.5"/>
+            genNodes="//@diagram/@topLevelNodes.6"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="SecurityConstraint"
             description="Create new SecurityConstraint"
-            genNodes="//@diagram/@topLevelNodes.10"/>
+            genNodes="//@diagram/@topLevelNodes.7"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Plan"
             description="Create new Plan"
-            genNodes="//@diagram/@topLevelNodes.4"/>
+            genNodes="//@diagram/@topLevelNodes.5"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="SecurityMechanism"
             description="Create new SecurityMechanism"
-            genNodes="//@diagram/@topLevelNodes.9"/>
+            genNodes="//@diagram/@topLevelNodes.1"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Organisation"
             description="Create new Organisation"
-            genNodes="//@diagram/@topLevelNodes.1"/>
+            genNodes="//@diagram/@topLevelNodes.2"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="SoftGoal"
             description="Create new SoftGoal"
-            genNodes="//@diagram/@topLevelNodes.12"/>
+            genNodes="//@diagram/@topLevelNodes.0"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Resource"
             description="Create new Resource"
-            genNodes="//@diagram/@topLevelNodes.7"/>
+            genNodes="//@diagram/@topLevelNodes.11"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Attacker"
             description="Create new Attacker"
-            genNodes="//@diagram/@topLevelNodes.6"/>
+            genNodes="//@diagram/@topLevelNodes.12"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="Vulnerability"
             description="Create new Vulnerability"
-            genNodes="//@diagram/@topLevelNodes.11"/>
+            genNodes="//@diagram/@topLevelNodes.8"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
             title="AttackMethod"
             description="Create new AttackMethod"
-            genNodes="//@diagram/@topLevelNodes.0"/>
-        <entries
-            xsi:type="gmfgen:Separator"/>
+            genNodes="//@diagram/@topLevelNodes.4"/>
         <entries
             xsi:type="gmfgen:ToolEntry"
-            title="Actor"
-            description="Create new Actor"/>
+            title="DependencyLinkToGoal"
+            description="Create new DependencyLinkToGoal"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="DependencyLinkFromActor"
+            description="Create new DependencyLinkFromActor"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="DependencyLinkToSecurityObjective"
+            description="Create new DependencyLinkToSecurityObjective"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="DependencyLinkToSecurityConstraint"
+            description="Create new DependencyLinkToSecurityConstraint"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="DependencyLinkToAttackMethod"
+            description="Create new DependencyLinkToAttackMethod"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="DependencyLinkToVulnerability"
+            description="Create new DependencyLinkToVulnerability"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="DependencyLinkToAttacker"
+            description="Create new DependencyLinkToAttacker"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="DependencyLinkToResource"
+            description="Create new DependencyLinkToResource"/>
       </groups>
     </palette>
     <preferencePages
@@ -536,12 +633,12 @@
         groupIcon="icons/linksNavigatorGroup.gif"/>
     <childReferences
         parent="//@diagram/@links.0"
-        child="//@diagram/@topLevelNodes.8"
+        child="//@diagram/@topLevelNodes.10"
         referenceType="out_target"
         groupName="target"
         groupIcon="icons/linkTargetNavigatorGroup.gif"/>
     <childReferences
-        parent="//@diagram/@topLevelNodes.8"
+        parent="//@diagram/@topLevelNodes.10"
         child="//@diagram/@links.0"
         referenceType="in_source"
         groupName="incoming links"

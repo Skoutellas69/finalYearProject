@@ -11,6 +11,15 @@
         title="finalYearName">
       <tools
           xsi:type="gmftool:CreationTool"
+          title="Actor"
+          description="Create new Actor">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="Goal"
           description="Create new Goal">
         <smallIcon
@@ -127,13 +136,72 @@
             xsi:type="gmftool:DefaultImage"/>
       </tools>
       <tools
-          xsi:type="gmftool:PaletteSeparator"
-          title="xgx"
-          description="gxcx"/>
+          xsi:type="gmftool:CreationTool"
+          title="DependencyLinkToGoal"
+          description="Create new DependencyLinkToGoal">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Actor"
-          description="Create new Actor">
+          title="DependencyLinkFromActor"
+          description="Create new DependencyLinkFromActor">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="DependencyLinkToSecurityObjective"
+          description="Create new DependencyLinkToSecurityObjective">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="DependencyLinkToSecurityConstraint"
+          description="Create new DependencyLinkToSecurityConstraint">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="DependencyLinkToAttackMethod"
+          description="Create new DependencyLinkToAttackMethod">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="DependencyLinkToVulnerability"
+          description="Create new DependencyLinkToVulnerability">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="DependencyLinkToAttacker"
+          description="Create new DependencyLinkToAttacker">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="DependencyLinkToResource"
+          description="Create new DependencyLinkToResource">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

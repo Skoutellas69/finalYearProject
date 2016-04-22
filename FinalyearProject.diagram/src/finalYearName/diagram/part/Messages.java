@@ -248,142 +248,222 @@ public class Messages extends NLS {
 	/**
 	 * @generated
 	 */
-	public static String Goal1CreationTool_title;
+	public static String Actor1CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Goal1CreationTool_desc;
+	public static String Actor1CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String DependencyLink2CreationTool_title;
+	public static String Goal2CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String DependencyLink2CreationTool_desc;
+	public static String Goal2CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String SecurityObjective3CreationTool_title;
+	public static String DependencyLink3CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String SecurityObjective3CreationTool_desc;
+	public static String DependencyLink3CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Threat4CreationTool_title;
+	public static String SecurityObjective4CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Threat4CreationTool_desc;
+	public static String SecurityObjective4CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String SecurityConstraint5CreationTool_title;
+	public static String Threat5CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String SecurityConstraint5CreationTool_desc;
+	public static String Threat5CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Plan6CreationTool_title;
+	public static String SecurityConstraint6CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Plan6CreationTool_desc;
+	public static String SecurityConstraint6CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String SecurityMechanism7CreationTool_title;
+	public static String Plan7CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String SecurityMechanism7CreationTool_desc;
+	public static String Plan7CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Organisation8CreationTool_title;
+	public static String SecurityMechanism8CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Organisation8CreationTool_desc;
+	public static String SecurityMechanism8CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String SoftGoal9CreationTool_title;
+	public static String Organisation9CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String SoftGoal9CreationTool_desc;
+	public static String Organisation9CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Resource10CreationTool_title;
+	public static String SoftGoal10CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Resource10CreationTool_desc;
+	public static String SoftGoal10CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Attacker11CreationTool_title;
+	public static String Resource11CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Attacker11CreationTool_desc;
+	public static String Resource11CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Vulnerability12CreationTool_title;
+	public static String Attacker12CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Vulnerability12CreationTool_desc;
+	public static String Attacker12CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String AttackMethod13CreationTool_title;
+	public static String Vulnerability13CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String AttackMethod13CreationTool_desc;
+	public static String Vulnerability13CreationTool_desc;
 
 	/**
 	 * @generated
 	 */
-	public static String Actor15CreationTool_title;
+	public static String AttackMethod14CreationTool_title;
 
 	/**
 	 * @generated
 	 */
-	public static String Actor15CreationTool_desc;
+	public static String AttackMethod14CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToGoal15CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToGoal15CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkFromActor16CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkFromActor16CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToSecurityObjective17CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToSecurityObjective17CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToSecurityConstraint18CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToSecurityConstraint18CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToAttackMethod19CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToAttackMethod19CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToVulnerability20CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToVulnerability20CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToAttacker21CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToAttacker21CreationTool_desc;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToResource22CreationTool_title;
+
+	/**
+	 * @generated
+	 */
+	public static String DependencyLinkToResource22CreationTool_desc;
 
 	/**
 	 * @generated
